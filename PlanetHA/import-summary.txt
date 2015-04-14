@@ -1,0 +1,407 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/scopes/
+* .idea/scopes/scope_settings.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* app/
+* app/build.gradle
+* app/libs/
+* app/libs/acra-4.4.0.jar
+* app/libs/core.jar
+* app/libs/dom4j-1.6.1.jar
+* app/libs/jaxen-1.1.6.jar
+* app/libs/json_simple-1.1.jar
+* app/lint.xml
+* app/src/
+* app/src/main/
+* app/src/main/AndroidManifest.xml
+* app/src/main/java/
+* app/src/main/java/.DS_Store
+* app/src/main/java/com/
+* app/src/main/java/com/.DS_Store
+* app/src/main/java/com/avadesign/
+* app/src/main/java/com/avadesign/.DS_Store
+* app/src/main/java/com/avadesign/ha/
+* app/src/main/java/com/avadesign/ha/.DS_Store
+* app/src/main/java/com/avadesign/ha/ActivityAbout.java
+* app/src/main/java/com/avadesign/ha/ActivityDownloadView.java
+* app/src/main/java/com/avadesign/ha/ActivityMenuView.java
+* app/src/main/java/com/avadesign/ha/ActivityNotifyHistory.java
+* app/src/main/java/com/avadesign/ha/ActivityReport.java
+* app/src/main/java/com/avadesign/ha/ActivityReportImage.java
+* app/src/main/java/com/avadesign/ha/ActivitySplashScreen.java
+* app/src/main/java/com/avadesign/ha/EventAlert.java
+* app/src/main/java/com/avadesign/ha/TouchImageView.java
+* app/src/main/java/com/avadesign/ha/camera/
+* app/src/main/java/com/avadesign/ha/camera/.DS_Store
+* app/src/main/java/com/avadesign/ha/camera/ActivityCameraEdit.java
+* app/src/main/java/com/avadesign/ha/camera/ActivityCameraView.java
+* app/src/main/java/com/avadesign/ha/camera/ActivityCameraWatch.java
+* app/src/main/java/com/avadesign/ha/frame/
+* app/src/main/java/com/avadesign/ha/frame/.DS_Store
+* app/src/main/java/com/avadesign/ha/frame/BaseActivity.java
+* app/src/main/java/com/avadesign/ha/frame/CusPreference.java
+* app/src/main/java/com/avadesign/ha/frame/DialogSetAuth.java
+* app/src/main/java/com/avadesign/ha/frame/GCMReceiver.java
+* app/src/main/java/com/avadesign/ha/frame/HttpClientHelper.java
+* app/src/main/java/com/avadesign/ha/frame/PlayButtonSound.java
+* app/src/main/java/com/avadesign/ha/frame/SendHttpCommand.java
+* app/src/main/java/com/avadesign/ha/frame/ServicePolling.java
+* app/src/main/java/com/avadesign/ha/frame/SharedClassApp.java
+* app/src/main/java/com/avadesign/ha/frame/ZWaveNode.java
+* app/src/main/java/com/avadesign/ha/frame/ZWaveNodeValue.java
+* app/src/main/java/com/avadesign/ha/frame/avacontrol_service.java
+* app/src/main/java/com/avadesign/ha/gateway/
+* app/src/main/java/com/avadesign/ha/gateway/.DS_Store
+* app/src/main/java/com/avadesign/ha/gateway/ActivityGatewayControl.java
+* app/src/main/java/com/avadesign/ha/gateway/ActivityGatewaySearch.java
+* app/src/main/java/com/avadesign/ha/gateway/ActivityGatewayView.java
+* app/src/main/java/com/avadesign/ha/gateway/ActivityNotifyList.java
+* app/src/main/java/com/avadesign/ha/gateway/ActivityUserList.java
+* app/src/main/java/com/avadesign/ha/node/
+* app/src/main/java/com/avadesign/ha/node/.DS_Store
+* app/src/main/java/com/avadesign/ha/node/ActivityDeviceList.java
+* app/src/main/java/com/avadesign/ha/node/ActivityDoorLock.java
+* app/src/main/java/com/avadesign/ha/node/ActivityNodeEdit.java
+* app/src/main/java/com/avadesign/ha/node/ActivityNodeList.java
+* app/src/main/java/com/avadesign/ha/room/
+* app/src/main/java/com/avadesign/ha/room/.DS_Store
+* app/src/main/java/com/avadesign/ha/room/ActivityRoomAdd.java
+* app/src/main/java/com/avadesign/ha/room/ActivityRoomList.java
+* app/src/main/java/com/avadesign/ha/scene/
+* app/src/main/java/com/avadesign/ha/scene/.DS_Store
+* app/src/main/java/com/avadesign/ha/scene/ActivitySceneEdit.java
+* app/src/main/java/com/avadesign/ha/scene/ActivitySceneEditValue.java
+* app/src/main/java/com/avadesign/ha/scene/ActivitySceneView.java
+* app/src/main/java/com/avadesign/ha/schedule/
+* app/src/main/java/com/avadesign/ha/schedule/.DS_Store
+* app/src/main/java/com/avadesign/ha/schedule/ActivityScheduleView.java
+* app/src/main/java/com/avadesign/ha/schedule/ActivityScheduleViewEdit.java
+* app/src/main/java/com/avadesign/ha/trigger/
+* app/src/main/java/com/avadesign/ha/trigger/.DS_Store
+* app/src/main/java/com/avadesign/ha/trigger/ActivityTriggerView.java
+* app/src/main/java/com/avadesign/ha/trigger/ActivityTriggerViewEdit.java
+* app/src/main/java/com/google/
+* app/src/main/java/com/google/.DS_Store
+* app/src/main/java/com/google/android/
+* app/src/main/java/com/google/android/gcm/
+* app/src/main/java/com/google/android/gcm/GCMBaseReceiver.java
+* app/src/main/java/com/google/android/gcm/GCMBroadcastReceiver.java
+* app/src/main/java/com/google/android/gcm/GCMessaging.java
+* app/src/main/res/
+* app/src/main/res/.DS_Store
+* app/src/main/res/drawable-hdpi/
+* app/src/main/res/drawable-hdpi/.DS_Store
+* app/src/main/res/drawable-hdpi/ic_launcher.png
+* app/src/main/res/drawable-hdpi/splash.png
+* app/src/main/res/drawable-ldpi/
+* app/src/main/res/drawable-ldpi/.DS_Store
+* app/src/main/res/drawable-ldpi/splash.png
+* app/src/main/res/drawable-mdpi/
+* app/src/main/res/drawable-mdpi/.DS_Store
+* app/src/main/res/drawable-mdpi/ic_launcher.png
+* app/src/main/res/drawable-mdpi/splash.png
+* app/src/main/res/drawable-xhdpi/
+* app/src/main/res/drawable-xhdpi/.DS_Store
+* app/src/main/res/drawable-xhdpi/ic_launcher.png
+* app/src/main/res/drawable-xhdpi/splash.png
+* app/src/main/res/drawable/
+* app/src/main/res/drawable/.DS_Store
+* app/src/main/res/drawable/add.png
+* app/src/main/res/drawable/add_s.png
+* app/src/main/res/drawable/alarm_mode.png
+* app/src/main/res/drawable/alertoff.png
+* app/src/main/res/drawable/alerton.png
+* app/src/main/res/drawable/back.png
+* app/src/main/res/drawable/back_s.png
+* app/src/main/res/drawable/battery_1.png
+* app/src/main/res/drawable/battery_2.png
+* app/src/main/res/drawable/battery_3.png
+* app/src/main/res/drawable/battery_4.png
+* app/src/main/res/drawable/battery_5.png
+* app/src/main/res/drawable/brightness.png
+* app/src/main/res/drawable/co_off.png
+* app/src/main/res/drawable/co_on.png
+* app/src/main/res/drawable/current.png
+* app/src/main/res/drawable/detail.png
+* app/src/main/res/drawable/dimmer_light_off.png
+* app/src/main/res/drawable/dimmer_light_on.png
+* app/src/main/res/drawable/doorkeypad_off.png
+* app/src/main/res/drawable/doorkeypad_on.png
+* app/src/main/res/drawable/dooroff.png
+* app/src/main/res/drawable/dooron.png
+* app/src/main/res/drawable/down.png
+* app/src/main/res/drawable/edit.png
+* app/src/main/res/drawable/edit_s.png
+* app/src/main/res/drawable/gw.png
+* app/src/main/res/drawable/gw_firm.png
+* app/src/main/res/drawable/gw_notify_list.png
+* app/src/main/res/drawable/gw_swap.png
+* app/src/main/res/drawable/gw_user_list.png
+* app/src/main/res/drawable/hollow.png
+* app/src/main/res/drawable/humidity.png
+* app/src/main/res/drawable/ic_launcher.png
+* app/src/main/res/drawable/icon_240.png
+* app/src/main/res/drawable/important.png
+* app/src/main/res/drawable/information.png
+* app/src/main/res/drawable/information_s.png
+* app/src/main/res/drawable/iroff.png
+* app/src/main/res/drawable/iron.png
+* app/src/main/res/drawable/light2_0.png
+* app/src/main/res/drawable/light2_1.png
+* app/src/main/res/drawable/light2_2.png
+* app/src/main/res/drawable/light2_3.png
+* app/src/main/res/drawable/light_g.png
+* app/src/main/res/drawable/light_off.png
+* app/src/main/res/drawable/light_on.png
+* app/src/main/res/drawable/light_r.png
+* app/src/main/res/drawable/menu_cam.png
+* app/src/main/res/drawable/menu_control.png
+* app/src/main/res/drawable/menu_notify_history.png
+* app/src/main/res/drawable/menu_notify_off.png
+* app/src/main/res/drawable/menu_notify_on.png
+* app/src/main/res/drawable/menu_scene.png
+* app/src/main/res/drawable/menu_schedule.png
+* app/src/main/res/drawable/menu_setting.png
+* app/src/main/res/drawable/menu_trigger.png
+* app/src/main/res/drawable/next.png
+* app/src/main/res/drawable/next_s.png
+* app/src/main/res/drawable/picture.png
+* app/src/main/res/drawable/plug.png
+* app/src/main/res/drawable/plug_off.png
+* app/src/main/res/drawable/plug_on.png
+* app/src/main/res/drawable/power.png
+* app/src/main/res/drawable/power_factor.png
+* app/src/main/res/drawable/previous.png
+* app/src/main/res/drawable/previous_s.png
+* app/src/main/res/drawable/remote.png
+* app/src/main/res/drawable/remove.png
+* app/src/main/res/drawable/remove_s.png
+* app/src/main/res/drawable/report.png
+* app/src/main/res/drawable/report_b.png
+* app/src/main/res/drawable/room.png
+* app/src/main/res/drawable/room_frame_background.xml
+* app/src/main/res/drawable/safe.png
+* app/src/main/res/drawable/save.png
+* app/src/main/res/drawable/save_s.png
+* app/src/main/res/drawable/search.png
+* app/src/main/res/drawable/search_s.png
+* app/src/main/res/drawable/selector_doolock.xml
+* app/src/main/res/drawable/selector_menu_cam.xml
+* app/src/main/res/drawable/selector_menu_control.xml
+* app/src/main/res/drawable/selector_menu_notify.xml
+* app/src/main/res/drawable/selector_menu_notify_history.xml
+* app/src/main/res/drawable/selector_menu_report.xml
+* app/src/main/res/drawable/selector_menu_scene.xml
+* app/src/main/res/drawable/selector_menu_schedule.xml
+* app/src/main/res/drawable/selector_menu_setting.xml
+* app/src/main/res/drawable/selector_menu_trigger.xml
+* app/src/main/res/drawable/selector_node_item_arm.xml
+* app/src/main/res/drawable/selector_node_item_cover.xml
+* app/src/main/res/drawable/selector_node_item_dimmer.xml
+* app/src/main/res/drawable/selector_node_item_sensor.xml
+* app/src/main/res/drawable/selector_node_item_sw.xml
+* app/src/main/res/drawable/selector_node_item_title.xml
+* app/src/main/res/drawable/selector_scene_edit_item.xml
+* app/src/main/res/drawable/selector_tab_about.xml
+* app/src/main/res/drawable/selector_tab_add.xml
+* app/src/main/res/drawable/selector_tab_back.xml
+* app/src/main/res/drawable/selector_tab_background.xml
+* app/src/main/res/drawable/selector_tab_del.xml
+* app/src/main/res/drawable/selector_tab_edit.xml
+* app/src/main/res/drawable/selector_tab_next.xml
+* app/src/main/res/drawable/selector_tab_previous.xml
+* app/src/main/res/drawable/selector_tab_save.xml
+* app/src/main/res/drawable/selector_tab_search.xml
+* app/src/main/res/drawable/selector_tab_setting.xml
+* app/src/main/res/drawable/selector_tab_update.xml
+* app/src/main/res/drawable/set.png
+* app/src/main/res/drawable/set_s.png
+* app/src/main/res/drawable/shock_off.png
+* app/src/main/res/drawable/shock_on.png
+* app/src/main/res/drawable/smork_off.png
+* app/src/main/res/drawable/smork_on.png
+* app/src/main/res/drawable/solid.png
+* app/src/main/res/drawable/splash.png
+* app/src/main/res/drawable/stop.png
+* app/src/main/res/drawable/sw_off.png
+* app/src/main/res/drawable/sw_on.png
+* app/src/main/res/drawable/sw_sm_off.png
+* app/src/main/res/drawable/sw_sm_on.png
+* app/src/main/res/drawable/tab_cam.png
+* app/src/main/res/drawable/tab_control.png
+* app/src/main/res/drawable/tab_monitor.png
+* app/src/main/res/drawable/tab_scene.png
+* app/src/main/res/drawable/tab_schedule.png
+* app/src/main/res/drawable/tab_switch.png
+* app/src/main/res/drawable/tab_trigger.png
+* app/src/main/res/drawable/temp.png
+* app/src/main/res/drawable/unsafe.png
+* app/src/main/res/drawable/up.png
+* app/src/main/res/drawable/update.png
+* app/src/main/res/drawable/update_s.png
+* app/src/main/res/drawable/voltage.png
+* app/src/main/res/drawable/water_off.png
+* app/src/main/res/drawable/water_on.png
+* app/src/main/res/drawable/wattage.png
+* app/src/main/res/drawable/window_cover_off.png
+* app/src/main/res/drawable/window_cover_off1.png
+* app/src/main/res/drawable/window_cover_on.png
+* app/src/main/res/drawable/window_cover_on1.png
+* app/src/main/res/drawable/windowoff.png
+* app/src/main/res/drawable/windowon.png
+* app/src/main/res/drawable/zzzz.png
+* app/src/main/res/layout/
+* app/src/main/res/layout/.DS_Store
+* app/src/main/res/layout/activity_about.xml
+* app/src/main/res/layout/activity_camera_edit.xml
+* app/src/main/res/layout/activity_camera_view.xml
+* app/src/main/res/layout/activity_camera_watch.xml
+* app/src/main/res/layout/activity_device_list.xml
+* app/src/main/res/layout/activity_download.xml
+* app/src/main/res/layout/activity_gateway_control.xml
+* app/src/main/res/layout/activity_gateway_search.xml
+* app/src/main/res/layout/activity_gateway_view.xml
+* app/src/main/res/layout/activity_menu_view.xml
+* app/src/main/res/layout/activity_node_edit.xml
+* app/src/main/res/layout/activity_node_list.xml
+* app/src/main/res/layout/activity_notify_history.xml
+* app/src/main/res/layout/activity_report.xml
+* app/src/main/res/layout/activity_report_image.xml
+* app/src/main/res/layout/activity_room_add.xml
+* app/src/main/res/layout/activity_room_list.xml
+* app/src/main/res/layout/activity_scene_edit.xml
+* app/src/main/res/layout/activity_scene_edit_value.xml
+* app/src/main/res/layout/activity_scene_view.xml
+* app/src/main/res/layout/activity_schedule_view.xml
+* app/src/main/res/layout/activity_schedule_view_edit.xml
+* app/src/main/res/layout/activity_trigger_view.xml
+* app/src/main/res/layout/activity_trigger_view_edit.xml
+* app/src/main/res/layout/activitynotifylist.xml
+* app/src/main/res/layout/activitysplashscreen.xml
+* app/src/main/res/layout/activityuserlist.xml
+* app/src/main/res/layout/custom_spinner.xml
+* app/src/main/res/layout/dialog_set_auth.xml
+* app/src/main/res/layout/doorlick.xml
+* app/src/main/res/layout/eventalert.xml
+* app/src/main/res/layout/item_cam.xml
+* app/src/main/res/layout/item_device.xml
+* app/src/main/res/layout/item_edit.xml
+* app/src/main/res/layout/item_history.xml
+* app/src/main/res/layout/item_menu.xml
+* app/src/main/res/layout/item_node.xml
+* app/src/main/res/layout/item_notify.xml
+* app/src/main/res/layout/item_room.xml
+* app/src/main/res/layout/item_scene.xml
+* app/src/main/res/layout/item_scene_edit.xml
+* app/src/main/res/layout/item_scene_edit_value.xml
+* app/src/main/res/layout/item_schedule.xml
+* app/src/main/res/layout/item_trigger.xml
+* app/src/main/res/layout/item_user.xml
+* app/src/main/res/layout/list_page.xml
+* app/src/main/res/layout/room_frame.xml
+* app/src/main/res/menu/
+* app/src/main/res/menu/activity_gateway.xml
+* app/src/main/res/raw/
+* app/src/main/res/raw/.DS_Store
+* app/src/main/res/raw/a010.mp3
+* app/src/main/res/raw/beep.ogg
+* app/src/main/res/raw/click.wav
+* app/src/main/res/raw/notify.mp3
+* app/src/main/res/raw/qualia.bks
+* app/src/main/res/values-sw600dp/
+* app/src/main/res/values-sw600dp/dimens.xml
+* app/src/main/res/values-sw720dp-land/
+* app/src/main/res/values-sw720dp-land/dimens.xml
+* app/src/main/res/values-v11/
+* app/src/main/res/values-v11/styles.xml
+* app/src/main/res/values-v14/
+* app/src/main/res/values-v14/styles.xml
+* app/src/main/res/values-zh-rCN/
+* app/src/main/res/values-zh-rCN/string.xml
+* app/src/main/res/values-zh-rCN/strings-command.xml
+* app/src/main/res/values-zh-rTW/
+* app/src/main/res/values-zh-rTW/.DS_Store
+* app/src/main/res/values-zh-rTW/strings-command.xml
+* app/src/main/res/values-zh-rTW/strings.xml
+* app/src/main/res/values/
+* app/src/main/res/values/.DS_Store
+* app/src/main/res/values/colors.xml
+* app/src/main/res/values/dimens.xml
+* app/src/main/res/values/ids.xml
+* app/src/main/res/values/strings-command.xml
+* app/src/main/res/values/strings.xml
+* app/src/main/res/values/styles.xml
+* app/src/main/res/xml/
+* app/src/main/res/xml/pref_device_info.xml
+* app/src/main/res/xml/pref_general.xml
+* avaControl.iml
+* build.gradle
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* proguard-project.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/acra-4.4.0.jar => app/libs/acra-4.4.0.jar
+* libs/core.jar => app/libs/core.jar
+* libs/dom4j-1.6.1.jar => app/libs/dom4j-1.6.1.jar
+* libs/jaxen-1.1.6.jar => app/libs/jaxen-1.1.6.jar
+* libs/json_simple-1.1.jar => app/libs/json_simple-1.1.jar
+* lint.xml => app/lint.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_menu_schedule" >
+
+        <ImageView
+            android:id="@+id/item_schedule_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_schedule_name"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_schedule" />
+
+        <TextView
+            android:id="@+id/item_schedule_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:lines="1"
+            android:paddingTop="10dp"
+            android:text="Schedule"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/contents_text" />
+
+        <ImageView
+            android:id="@+id/item_schedule_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/item_schedule_image"
+            android:paddingTop="10dp"
+            android:src="@drawable/remove"
+            android:visibility="invisible" />
+
+        <Switch
+            android:id="@+id/item_schedule_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_schedule_image"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:focusable="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>

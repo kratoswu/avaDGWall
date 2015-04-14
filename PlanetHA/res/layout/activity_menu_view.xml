@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:baselineAligned="false" >
+
+                <Button
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:background="@drawable/menu_control"
+                    android:text="@string/menu_control"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_scene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:background="@drawable/menu_scene"
+                    android:text="@string/menu_scene"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_cam"
+                    android:text="@string/menu_camera"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_trigger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_trigger"
+                    android:text="@string/menu_trigger"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_schedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_schedule"
+                    android:text="@string/menu_schedule"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_setting"
+                    android:text="@string/menu_setting"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+			<LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+				<Button
+				    android:gravity="bottom|center_horizontal"
+				    android:paddingBottom="10dp"
+				    android:id="@+id/button_report"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginLeft="6dp"
+				    android:layout_marginRight="3dp"
+				    android:layout_weight="1"
+				    android:background="@drawable/report_b"
+				    android:text="@string/REPORT"
+				    android:textColor="#ffffff" />
+
+                <Button
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_notify_history"
+                    android:text="@string/menu_notify_history"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+            
+			<LinearLayout
+			    android:id="@+id/layout4"
+			    android:layout_width="match_parent"
+			    android:layout_height="140dp"
+			    android:layout_marginTop="5dp"
+			    android:gravity="center"
+			    android:orientation="horizontal"
+			    android:visibility="gone" >
+
+                <Button
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/button_notify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/menu_notify_on_0"
+                    android:text="@string/menu_notify_on"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

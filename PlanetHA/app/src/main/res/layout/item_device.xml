@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/selector_node_item_title"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/titlelayout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/encode_view"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/selector_node_item_sw"
+        android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ImageViewFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearlayout1"
+        android:layout_alignTop="@+id/linearlayout1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/plug_on"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageViewFrame"
+		android:layout_alignLeft="@+id/ImageViewFrame"
+   		android:layout_alignRight="@+id/ImageViewFrame"
+        android:layout_alignTop="@+id/ImageViewFrame"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/light_off" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/layout_power"
+        android:layout_toRightOf="@+id/item_image"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/contents_text" />
+
+        <TextView
+            android:id="@+id/item_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Location"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/contents_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageViewFrame"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ImageViewFrame"
+        android:gravity="center|right"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/power_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/battery_1"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/power_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/contents_text" />
+    </LinearLayout>
+    
+    
+</RelativeLayout>	
+    
+</LinearLayout>

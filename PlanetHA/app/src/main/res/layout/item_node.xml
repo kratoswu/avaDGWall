@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/switchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/selector_node_item_sw"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/switchlayout_icon_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plug_on" />
+
+        <LinearLayout
+            android:id="@+id/switchlayout_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/switchlayout_power_layout"
+            android:layout_toRightOf="@+id/switchlayout_icon_image"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/switchlayout_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Status : On"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+
+            <TextView
+                android:id="@+id/switchlayout_nickname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="nick name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/switchlayout_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="false">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/battery_5"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/switchlayout_power_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="100%"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/switchlayout_dead_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/important"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dead"
+                android:id="@+id/textView"
+                android:textColor="#ff0000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dimmerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/selector_node_item_dimmer"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/dimmerlayout_icon_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/light_on"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@+id/dimmerlayout_icon_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/dimmerlayout_power_layout"
+            android:id="@+id/dimmerlayout_name_layout">
+
+            <TextView
+                android:id="@+id/dimmerlayout_nickname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <SeekBar
+                    android:id="@+id/dimmerlayout_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="99" />
+
+                <TextView
+                    android:id="@+id/dimmerlayout_seek_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="99%"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/contents_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dimmerlayout_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="false" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/battery_5"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="100%"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dimmerlayout_dead_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/important"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dead"
+                android:id="@+id/textView3"
+                android:textColor="#ff0000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sensorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/selector_node_item_sensor"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/sensorlayout_icon_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/temp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/sensorlayout_name_layout"
+            android:layout_toRightOf="@+id/sensorlayout_icon_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/sensorlayout_power_layout">
+
+            <TextView
+                android:id="@+id/sensorlayout_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Mode : Bypass"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+
+            <TextView
+                android:id="@+id/sensorlayout_nickname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sensorlayout_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="false" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/battery_5"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="100%"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/contents_text" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sensorlayout_dead_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView6"
+                android:src="@drawable/important"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dead"
+                android:id="@+id/textView5"
+                android:textColor="#ff0000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/coverlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/selector_node_item_cover"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/coverlayout_control"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <ImageButton
+                android:id="@+id/coverlayout_control_down"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/down" />
+
+            <ImageButton
+                android:id="@+id/coverlayout_control_stop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/stop" />
+
+            <ImageButton
+                android:id="@+id/coverlayout_control_up"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/up" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

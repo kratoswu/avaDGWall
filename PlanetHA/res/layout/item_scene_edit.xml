@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_scene_edit_item"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/other_layout"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ImageViewFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="5dp"
+        		android:paddingRight="5dp"
+                android:src="@drawable/plug_on"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/item_node_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+        		android:paddingRight="5dp"
+                android:layout_alignBottom="@+id/ImageViewFrame"
+                android:layout_alignLeft="@+id/ImageViewFrame"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/ImageViewFrame"
+                android:layout_alignTop="@+id/ImageViewFrame"
+                android:scaleType="fitCenter"
+                android:src="@drawable/light2_1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/other_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon_layout"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp" >
+
+            <TextView
+                android:id="@+id/item_node_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="Co Sensor"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/contents_text" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/item_node_sensor_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Layout_Seek"
+                    android:layout_alignRight="@+id/Layout_Seek"
+                    android:gravity="center"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/contents_text" />
+
+                <LinearLayout
+                    android:id="@+id/Layout_Seek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:visibility="visible" >
+
+                    <SeekBar
+                        android:id="@+id/seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:max="99" />
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="100%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/contents_text" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

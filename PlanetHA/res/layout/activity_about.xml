@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#1e345d"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher240" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1"
+        android:gravity="center"
+        android:text="Copyright© 2015 PLANET Technology Corporation"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    
+    <TextView
+        android:textColor="#00baff"
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:gravity="center|right"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="www.PLANET.com.tw"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+/>
+
+</RelativeLayout>

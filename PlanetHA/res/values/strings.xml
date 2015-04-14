@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Planet Cloud Home</string>
+
+	<string name="about">about</string>
+	<string name="label_about_web">&lt;a href="http://www.avadesign.com.tw/">http://www.avadesign.com.tw&lt;/a></string>
+
+	<!--Login VIEW -->
+	<string name="login_account">Account</string>
+	<string name="login_password">Password</string>
+	<string name="login_auto">Auto Login</string>
+	<string name="login_button_login">Login</string>
+	<string name="login_button_register">Register</string>
+
+	<!--Register VIEW -->
+	<string name="reg_fname">First Name</string>
+	<string name="reg_lname">Last Name</string>
+	<string name="reg_newsletter">receive the newsletter</string>
+
+	<!--GatewayList VIEW -->
+	<string name="section1">My Gateway List</string>
+	<string name="section2">Share to me List</string>
+	<string name="section3">Add the New Gateway</string>
+	<string name="delete_str">Delete</string>
+	<string name="delete_title">Delete Gateway !</string>
+	<string name="delete_message">Confirm Delete this gateway ?</string>
+
+	<!--MENU VIEW -->
+	<string name="menu_control">Room</string>
+	<string name="menu_scene">Scene</string>
+	<string name="menu_camera">Camera</string>
+	<string name="menu_trigger">Trigger</string>
+	<string name="menu_schedule">Schedule</string>
+    <string name="menu_setting">Setting</string>
+	<string name="menu_notify_on">Notification On</string>
+	<string name="menu_notify_off">Notification Off</string>
+	<string name="menu_notify_history">Notification History</string>
+
+	<!-- Room List -->
+    <string name="room_all_room">All Room</string>
+    <string name="room_no_room">No Room</string>
+    <string name="room_add_title">Add New Rooom</string>
+    <string name="room_add_message">input the Room Name</string>
+    <string name="room_del_title">Delete Room</string>
+    <string name="room_del_message">Do you want to Delete </string>
+    <string name="room_name">Room Name</string>
+    <string name="room_select_picture">Select Picture</string>
+
+    <!-- DOWNLOAD List -->
+	<string name="DOWNLOAD_ICON">Download the Device Icon</string>
+
+	<!-- ReportViewController -->
+	<string name="REPORT">Report</string>
+	<string name="REPORT_VOLTAGE">Voltage(V)</string>
+	<string name="REPORT_CURRENT">Current(A)</string>
+	<string name="REPORT_WATTAGE">Wattage(W)</string>
+	<string name="REPORT_ENERGY">Energy(Kwh)</string>
+	<string name="REPORT_NODATA">No Data</string>
+	<string name="REPORT_LAB_SOURCES">Generating reports from Device</string>
+	<string name="REPORT_LAB_UNIT">Report Unit</string>
+	<string name="REPORT_LAB_FROM_T">Start Time</string>
+	<string name="REPORT_LAB_TO_T">End Time</string>
+
+    <!-- Node List -->
+    <string name="device_type">Select Display Type</string>
+    <string name="device_all">All Device</string>
+    <string name="device_control">Control</string>
+    <string name="device_monitor">Monitor</string>
+
+    <string name="device_status">Status</string>
+    <string name="device_on">On</string>
+    <string name="device_off">Off</string>
+    <string name="device_lock">Lock</string>
+    <string name="device_unlock">UnLock</string>
+    <string name="device_lock_pass_title">Wrong password</string>
+    <string name="device_lock_pass_message">Please re-enter the password</string>
+
+    <string name="node_dimmer">Dimmer</string>
+    <string name="node_switch">Switch</string>
+    <string name="node_title">Deive Control Section</string>
+
+    <!-- Edit Node -->
+    <string name="edit_node_group_status">Device Status</string>
+    <string name="edit_node_group_info">Device Info</string>
+    <string name="edit_node_group_icon">Device Icon</string>
+    <string name="edit_node_group_configer">Device configuration</string>
+    <string name="edit_node_group_mode">Device Mode Setting</string>
+    <string name="edit_node_group_status_type">Device Type</string>
+    <string name="edit_node_group_status_status">Device Status</string>
+    <string name="edit_node_group_status_power">Power Level</string>
+    <string name="edit_node_group_status_power_plug">Plug</string>
+    <string name="edit_node_group_info_name">Name</string>
+    <string name="edit_node_group_info_location">Location</string>
+    <string name="edit_node_remove">Remove Failed Device</string>
+    <string name="edit_node_last_time">Last control time</string>
+
+    <string name="edit_node_remove_title">Remove</string>
+    <string name="edit_node_remove_message">Do you want to remove the failed Device</string>
+    <string name="edit_node_fail_title">Device is not responding</string>
+    <string name="edit_node_fail_message">Sure to remove the device?</string>
+    <string name="edit_node_name">Edit name</string>
+
+    <string name="EDIT_ICON_MAIN_TITLE">Main Icon</string>
+    <string name="EDIT_ICON_FUN_TITLE">Function Icon</string>
+
+    <!-- Scene View -->
+    <string name="scene_delete_title">Delete Scene</string>
+    <string name="input_scene_name">Input the Scene name</string>
+    <string name="new_scene_name">New Scene</string>
+    <string name="scene_delete_message">Do you want to Delete </string>
+
+    <!-- Scene Edit View -->
+    <string name="scene_name">Scene Name</string>
+    <string name="scene_edit_delete_title">Delete The Device in Scene ?</string>
+    <string name="scene_edit_delete_message">The Device will be delete！</string>
+
+    <!-- Scene Edit Value View -->
+    <string name="scene_edit_value_sw2_title">Select Device to Add</string>
+    <string name="scene_edit_value_sw2_message">Select Switch1 or Switch2 to add on Scene</string>
+    <string name="scene_edit_value_sw1">Switch1</string>
+    <string name="scene_edit_value_sw2">Switch2</string>
+
+    <!-- Camera View -->
+    <string name="cam_delete_title">Delete Camera</string>
+    <string name="cam_delete_message">Do you want to Delete </string>
+
+    <!-- Camera Watch View -->
+    <string name="dialog_cam_title_user">Input the Cam Authenticate</string>
+    <string name="dialog_cam_message_user">Account and Password</string>
+
+    <!-- Trigger View -->
+    <string name="trigger_delete_title">Delete Trigger</string>
+    <string name="trigger_delete_message">Do you want to Delete </string>
+
+    <!-- Trigger Edit View -->
+    <string name="trigger_name">Trigger Name</string>
+
+    <string name="trigger_status_info_name">Input The Trigger Name</string>
+	<string name="trigger_status_info_sources">Select the Trigger Sources</string>
+	<string name="trigger_status_info_note">Note:</string>
+	<string name="trigger_status_info_note_content">Trigger control is a scene-based,\nif not yet set the scene,\nplease set the scene first</string>
+	<string name="trigger_status_info_scene">Select Scene when Trigger happens</string>
+	<string name="trigger_status_info_delay">If you want to another Scene in the execution,On the Scene complete</string>
+	<string name="trigger_status_info_notify">If you want to receive Notification,When Trigger happens,On the phone</string>
+	<string name="trigger_status_info_mode">Sensor is Trigger to Start in which mode</string>
+
+    <string name="trigger_mode">Mode</string>
+    <string name="trigger_scene">Scene</string>
+    <string name="trigger_second">Second</string>
+    <string name="trigger_notify">Notification</string>
+    <string name="trigger_second_hint">sec(optional)</string>
+    <string name="trigger_scene_hint">scene(optional)</string>
+
+    <!-- Schedule View -->
+    <string name="schedule_delete_title">Delete Schedule</string>
+    <string name="schedule_delete_message">Do you want to Delete </string>
+
+    <!-- Schedule Edit View -->
+    <string name="schedule_name">Schedule Name</string>
+    <string name="schedule_period">Period</string>
+    <string name="schedule_period_week">Week</string>
+    <string name="schedule_period_day">Day</string>
+    <string name="schedule_period_once">Once</string>
+    <string name="schedule_day">Day</string>
+    <string name="schedule_delay">Delay Time</string>
+    <string name="schedule_time">Time</string>
+    <string name="schedule_scene">Scene</string>
+    <string name="schedule_day_sum">Sum</string>
+    <string name="schedule_day_mon">Mon</string>
+    <string name="schedule_day_tue">Tue</string>
+    <string name="schedule_day_wed">Wed</string>
+    <string name="schedule_day_thu">Thu</string>
+    <string name="schedule_day_fri">Fri</string>
+    <string name="schedule_day_sat">Sat</string>
+
+	<!-- Gateway -->
+	<string name="gw_change_account">Logout</string>
+	<string name="gw_account_setting">Share to user</string>
+	<string name="gw_notify_setting">Notification Setting</string>
+	<string name="gw_firm">Firmwave Update</string>
+	<string name="gw_setting">Gateway Setting</string>
+	<string name="gw_connected">Connectivity</string>
+
+	<!-- Search Gateway -->
+	<string name="search_title">Selection your Gateway</string>
+	<string name="search_no_found">no controller found</string>
+	<string name="manually_enter">Manually enter</string>
+	<string name="search_history">Search History</string>
+
+	<string name="gws_alert_title">Add New Gateway</string>
+	<string name="gws_alert_message">Please connect to the phone and Gateway the same LAN, before automatically search, or manually enter the Gateway MAC</string>
+
+	<!-- Control Gateway -->
+	<string name="CM_BUTTON_IN">Inclusion Device</string>
+	<string name="CM_BUTTON_EX">Exclusion Device</string>
+	<string name="CM_BUTTON_IN_OK">Inclusion Success</string>
+	<string name="CM_BUTTON_EX_OK">Exclusion Success</string>
+
+	<!-- User List -->
+	<string name="dialog_title_add_user">Add New Account</string>
+    <string name="dialog_message_add_user">Input the User Account and Password</string>
+    <string name="dialog_title_edit_user">Modified Password</string>
+    <string name="dialog_message_edit_user">input the New Password</string>
+    <string name="dialog_title_del_user">Delete Account</string>
+    <string name="dialog_message_del_user">Do you want to Delete </string>
+
+    <!-- ALERT -->
+    <string name="alert_button_ok">Ok</string>
+    <string name="alert_button_cancel">Cancel</string>
+    <string name="alert_button_update">Update</string>
+    <string name="alert_button_save">Save</string>
+    <string name="alert_button_repass">Resend Password</string>
+    <string name="menu_exit_alert_title">Exit this app?</string>
+    <string name="menu_exit_alert_message">Do you want to Exit?</string>
+    <string name="dialog_message_load">loading</string>
+    <string name="dialog_message_wait">Please wait</string>
+    <string name="dialog_message_succeed">Succeed</string>
+    <string name="dialog_message_failed">Failed</string>
+    <string name="dialog_title_change_user">Change Login Account</string>
+    <string name="dialog_message_change_user">Inupt Account and Password</string>
+    <string name="dialog_title_firm_can">Firmware Updated</string>
+    <string name="dialog_message_firm_can">The new version of the firmware,\nsure you want to be updated\n\n</string>
+    <string name="dialog_title_firm_cant">Firmware Updated</string>
+    <string name="dialog_message_firm_cant">Firmware is the latest version</string>
+    <string name="dialog_title_firm_done">Warning</string>
+    <string name="dialog_message_firm_done">Update start \n Do not remove the Gateway power</string>
+    <string name="dialog_title_set_auth">Input The Gateway</string>
+    <string name="dialog_message_set_auth">Account and Password</string>
+    <string name="dialog_message_set_mac">MAC Address</string>
+
+    <string name="dialog_account">Account</string>
+    <string name="dialog_password">Password</string>
+
+    <string name="alert_title_success">Success</string>
+	<string name="alert_title_error">Error</string>
+	<string name="alert_message_resend_done">Password has been re-send to Email</string>
+	<string name="alert_message_register_done">Register is Complete</string>
+	<string name="alert_message_text_empty">Field can not empty</string>
+
+	<string name="alert_message_error_401">Account or password Error</string>
+
+    <!-- Status -->
+    <string name="status_online">Online</string>
+    <string name="status_offline">Offline</string>
+    <string name="status_no_connect">No Gateway Connected</string>
+
+    <!-- tab button -->
+    <string name="tab_button_setting">Inclusion/Exclusion</string>
+    <string name="tab_button_search">Search</string>
+    <string name="tab_button_back">Back</string>
+    <string name="tab_button_add">Add</string>
+    <string name="tab_button_edit">Edit</string>
+    <string name="tab_button_del">Delete</string>
+    <string name="tab_button_update">Update</string>
+    <string name="tab_button_next">Next</string>
+    <string name="tab_button_previous">Previous</string>
+    <string name="tab_button_save">Save</string>
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_Search">Search</string>
+
+    <string name="edit_view">Edit Device Info</string>
+    <string name="edit_scene">Edit Scene</string>
+    <string name="edit_scene_value">Select Device to add</string>
+    <string name="edit_mode">Edit Mode</string>
+
+    <string name="ctrl_panel">Control Panel</string>
+    <string name="roomlist">Room List</string>
+    <string name="userlist">User List</string>
+    <string name="notifylist">Notification List</string>
+    <string name="ctrl_mode_change">Controller Mode</string>
+    <string name="scene">Scene</string>
+
+    <string name="dialog_title_modified_user">Modified Password</string>
+    <string name="dialog_message_modified_user">Enter the New Password.</string>
+
+    <string name="dialog_title_add_notify">Add Notification</string>
+    <string name="dialog_message_add_notify">Enter the Device name and ID</string>
+
+
+    <string name="label_prefer_title_device_info">Device Information</string>
+    <string name="label_prefer_summary_device_info">Click here to view the details.</string>
+
+    <string name="hint_username">Account</string>
+    <string name="hint_userpwd">Password</string>
+
+    <string name="label_ok">OK</string>
+    <string name="label_devices">Devices</string>
+    <string name="label_control_state">Controller State</string>
+    <string name="label_cancel">Cancel</string>
+
+    <string name="scanqrcode">Scan QR Code</string>
+
+    <string name="label_add_node">Add Device</string>
+    <string name="label_remove_node">Remove Device</string>
+    <string name="label_cancel_node">Cancel Command</string>
+
+    <string name="label_add_trigger">Add Trigger</string>
+    <string name="label_add_schedule">Add Schedule</string>
+
+    <string name="label_tab1">Device</string>
+    <string name="label_tab2">Scene</string>
+    <string name="label_tab3">Gateway</string>
+    <string name="label_tab4">Trigger</string>
+    <string name="label_tab5">Schedule</string>
+
+    <string name="label_prefer_title_node_id">Node ID</string>
+    <string name="label_prefer_title_btype">Basic Type</string>
+    <string name="label_prefer_title_gtype">Generic Type</string>
+    <string name="label_prefer_title_name">Name</string>
+    <string name="label_prefer_title_location">Location</string>
+    <string name="label_prefer_title_manufacturer">Manufacturer</string>
+    <string name="label_prefer_title_product">Product</string>
+    <string name="label_prefer_title_listening">Listening</string>
+    <string name="label_prefer_title_frequent">Frequent</string>
+    <string name="label_prefer_title_beam">Beam</string>
+    <string name="label_prefer_title_routing">Routing</string>
+    <string name="label_prefer_title_security">Security</string>
+    <string name="label_prefer_title_time">Last Heard</string>
+    <string name="label_prefer_title_status">Status</string>
+
+    <string-array name = "type_array" >
+        <item>All Device</item>
+        <item>Control</item>
+        <item>Monitor</item>
+    </string-array>
+
+</resources>

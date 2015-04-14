@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="server_ip">54.215.15.185</string>
+    <string name="server_port">8080</string>
+    <string name="server_url_syntax">http://%1$s:%2$s/z_cloud/SendCommand/</string> <!-- should use https -->
+    <string name="local_url_syntax">http://%1$s:%2$s/</string>
+    <string name="cam_url_syntax">http://%1$s:%2$s/</string>
+ 
+</resources>
+
+
+<!-- 
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="PIR_MOTION_SENSOR">Wireless PIR Motion Sensor(Temperature Sensor Built-In)"</string>
+	<string name="SIREN_STROBE_ALERT">Wireless Siren and Strobe Alarm Battery Power"</string>
+	<string name="DOOR_WINDOW_SENSOR">Wireless Door/Window Sensor"</string>
+	<string name="DOOR_LOCK_SENSOR">Wireless Electronic Deadbolt Door Lock(Real Time Version)"</string>
+	<string name="POWER_PLUG_ONOFF">Appliance On/Off Module(Power Plug In Type)"</string>
+	<string name="POWER_PLUG_DIMMER">Lamp Dimmer Module(Power Plug In Type)"</string>
+	<string name="CO_SENSOR">Wireless CO Detector"</string>
+	<string name="SMOKE_SENSOR">Wireless Smoke Detector"</string>
+	<string name="SHOCK_SENSOR">Wireless Shock Sensor"</string>
+	<string name="IN_WALL_2SW">In-Wall Switch, 2 Relays"</string>
+	<string name="IN_WALL_1SW">Hidden Type On/Off Module"</string>
+	<string name="WINDOW_COVER">Window Cover</string>
+    
+ 
+</resources>
+ -->

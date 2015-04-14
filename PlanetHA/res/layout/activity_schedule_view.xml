@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityNodeList" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_devices_func_layout"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/admintoolLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/tab_add"
+                style="@style/AppBaseTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#20FFFFFF"
+                android:drawableTop="@drawable/selector_tab_add"
+                android:text="@string/tab_button_add"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/tab_edit"
+                style="@style/AppBaseTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#20FFFFFF"
+                android:drawableTop="@drawable/selector_tab_edit"
+                android:text="@string/tab_button_edit"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/tab_del"
+                style="@style/AppBaseTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#20FFFFFF"
+                android:drawableTop="@drawable/selector_tab_del"
+                android:text="@string/tab_button_del"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:padding="0dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_devices_func_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/tab_scene"
+            style="@style/AppBaseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:drawableTop="@drawable/tab_scene"
+            android:text="@string/menu_scene"
+            android:textSize="12sp" />
+        
+		<Button
+            android:id="@+id/tab_trigger"
+            style="@style/AppBaseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_background"
+            android:drawableTop="@drawable/tab_trigger"
+            android:text="@string/menu_trigger"
+            android:textSize="12sp" />
+
+		<Button
+		    android:id="@+id/tab_schedule"
+		    style="@style/AppBaseTheme"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:background="@drawable/selector_tab_background"
+		    android:drawableTop="@drawable/tab_schedule"
+		    android:text="@string/menu_schedule"
+		    android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tab_back"
+            style="@style/AppBaseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#20FFFFFF"
+            android:drawableTop="@drawable/selector_tab_back"
+            android:text="@string/tab_button_back"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

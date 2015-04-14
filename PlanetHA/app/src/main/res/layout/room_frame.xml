@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/frame"
+        style="@style/AppBaseTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#20FFFFFF"
+        android:drawableTop="@drawable/tab_control"
+        android:text="123456789012345"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/room_frame_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/frame"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_alignRight="@+id/frame"
+        android:layout_alignTop="@+id/frame"
+        android:drawableTop="@drawable/room"
+        android:scaleType="fitCenter"
+        android:background="@drawable/room_frame_background"
+        android:src="@drawable/room" />
+
+    <TextView
+        android:id="@+id/room_frame_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_alignRight="@+id/frame"
+        android:layout_below="@+id/frame"
+        android:gravity="center"
+        android:lines="1"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

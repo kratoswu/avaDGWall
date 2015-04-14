@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="base_screen" >
+    <EditTextPreference android:key="node_id" android:title="@string/label_prefer_title_node_id"/>
+    <EditTextPreference android:key="name" android:title="@string/label_prefer_title_name"/>
+    <EditTextPreference android:key="location" android:title="@string/label_prefer_title_location"/>
+    <EditTextPreference android:key="btype" android:title="@string/label_prefer_title_btype"/>
+    <EditTextPreference android:key="gtype" android:title="@string/label_prefer_title_gtype"/>
+    <EditTextPreference android:key="manufacturer" android:title="@string/label_prefer_title_manufacturer"/>
+    <EditTextPreference android:key="product" android:title="@string/label_prefer_title_product"/>
+    <EditTextPreference android:key="listening" android:title="@string/label_prefer_title_listening"/>
+    <EditTextPreference android:key="frequent" android:title="@string/label_prefer_title_frequent"/>
+    <EditTextPreference android:key="beam" android:title="@string/label_prefer_title_beam"/>
+    <EditTextPreference android:key="routing" android:title="@string/label_prefer_title_routing"/>
+    <EditTextPreference android:key="security" android:title="@string/label_prefer_title_security"/>
+    <EditTextPreference android:key="time" android:title="@string/label_prefer_title_time"/>
+    <EditTextPreference android:key="status" android:title="@string/label_prefer_title_status"/>
+
+</PreferenceScreen>

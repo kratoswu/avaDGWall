@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about">關於</string>
+    <string name="label_about_web">&lt;a href="http://www.avadesign.com.tw/">http://www.avadesign.com.tw&lt;/a></string>
+
+    <!--Login VIEW -->
+	<string name="login_account">帳號</string>
+	<string name="login_password">密碼</string>
+	<string name="login_auto">自動登入</string>
+	<string name="login_button_login">登入</string>
+	<string name="login_button_register">註冊</string>
+
+	<!--Register VIEW -->
+	<string name="reg_fname">名字</string>
+	<string name="reg_lname">姓氏</string>
+	<string name="reg_newsletter">是否要收到電子報</string>
+
+	<!--GatewayList VIEW -->
+	<string name="section1">我的Gateway清單</string>
+	<string name="section2">分享給我的清單</string>
+	<string name="section3">新增Gateway</string>
+	<string name="delete_str">刪除</string>
+	<string name="delete_title">刪除Gateway !</string>
+	<string name="delete_message">確認刪除此Gateway？</string>
+
+    <!-- MENU VIEW -->
+    <string name="menu_control">房間</string>
+	<string name="menu_scene">情境</string>
+	<string name="menu_camera">攝影機</string>
+	<string name="menu_trigger">觸發設定</string>
+	<string name="menu_schedule">排程設定</string>
+    <string name="menu_setting">設定</string>
+	<string name="menu_notify_on">警報通知 開啓</string>
+	<string name="menu_notify_off">警報通知 關閉</string>
+	<string name="menu_notify_history">警報歷史記錄</string>
+
+	<!-- Room List -->
+    <string name="room_all_room">全部房間</string>
+    <string name="room_no_room">尚未設定房間</string>
+    <string name="room_add_title">新增房間</string>
+    <string name="room_add_message">輸入房間名稱</string>
+    <string name="room_del_title">刪除房間</string>
+    <string name="room_del_message">確定要刪除</string>
+    <string name="room_name">房間名稱</string>
+    <string name="room_select_picture">選擇圖片</string>
+
+    <!-- DOWNLOAD List -->
+	<string name="DOWNLOAD_ICON">下載裝置圖片中</string>
+
+		<!-- ReportViewController -->
+	<string name="REPORT">產生報表</string>
+	<string name="REPORT_VOLTAGE">電壓(V)</string>
+	<string name="REPORT_CURRENT">電流(A)</string>
+	<string name="REPORT_WATTAGE">瓦特(W)</string>
+	<string name="REPORT_ENERGY">度(Kwh)</string>
+	<string name="REPORT_NODATA">沒有資料</string>
+	<string name="REPORT_LAB_SOURCES">產生報表的裝置</string>
+	<string name="REPORT_LAB_UNIT">報表種類</string>
+	<string name="REPORT_LAB_FROM_T">起始時間</string>
+	<string name="REPORT_LAB_TO_T">結束時間</string>
+
+    <!-- Node List -->
+    <string name="device_type">選擇顯示模式</string>
+    <string name="device_all">全部裝置</string>
+    <string name="device_control">控制</string>
+    <string name="device_monitor">觀測</string>
+
+    <string name="device_status">狀態</string>
+    <string name="device_on">開</string>
+    <string name="device_off">關</string>
+    <string name="device_lock">上鎖</string>
+    <string name="device_unlock">解鎖</string>
+    <string name="device_lock_pass_title">密碼錯誤</string>
+    <string name="device_lock_pass_message">請重新輸入門鎖密碼</string>
+
+    <string name="node_dimmer">調光器</string>
+    <string name="node_switch">開關</string>
+    <string name="node_title">裝置控制項</string>
+
+    <!-- Edit Node -->
+    <string name="edit_node_group_status">裝置狀態</string>
+    <string name="edit_node_group_info">裝置資訊</string>
+    <string name="edit_node_group_icon">裝置圖片</string>
+    <string name="edit_node_group_configer">裝置設定項</string>
+    <string name="edit_node_group_mode">裝置模式設定</string>
+    <string name="edit_node_group_status_type">裝置型態</string>
+    <string name="edit_node_group_status_status">裝置狀態</string>
+    <string name="edit_node_group_status_power">電源狀態</string>
+    <string name="edit_node_group_status_power_plug">市電</string>
+    <string name="edit_node_group_info_name">名稱</string>
+    <string name="edit_node_group_info_location">位置</string>
+    <string name="edit_node_remove">移除無效的裝置</string>
+    <string name="edit_node_last_time">最後控制時間</string>
+
+    <string name="edit_node_remove_title">移除裝置</string>
+    <string name="edit_node_remove_message">確定要移除此裝置</string>
+    <string name="edit_node_fail_title">裝置無回應</string>
+    <string name="edit_node_fail_message">確定移除裝置?</string>
+    <string name="edit_node_name">修改名稱</string>
+
+    <string name="EDIT_ICON_MAIN_TITLE">主圖示</string>
+    <string name="EDIT_ICON_FUN_TITLE">功能圖示</string>
+
+    <!-- Scene View -->
+    <string name="scene_delete_title">刪除情境</string>
+    <string name="scene_delete_message">確定要刪除</string>
+
+    <!-- Scene Edit View -->
+    <string name="scene_name">情境名稱</string>
+    <string name="input_scene_name">輸入情境名稱</string>
+    <string name="new_scene_name">新增情境</string>
+    <string name="scene_edit_delete_title">在情境中刪除此裝置？</string>
+    <string name="scene_edit_delete_message">此裝置將從情境中移除！</string>
+
+    <!-- Scene Edit Value View -->
+    <string name="scene_edit_value_sw2_title">選擇要加入到情境的裝置</string>
+    <string name="scene_edit_value_sw2_message">選擇開關1或是開關2來加入情境</string>
+    <string name="scene_edit_value_sw1">開關1</string>
+    <string name="scene_edit_value_sw2">開關2</string>
+
+    <!-- Camera View -->
+    <string name="cam_delete_title">刪除攝影機</string>
+    <string name="cam_delete_message">確定要刪除</string>
+
+    <!-- Camera Watch View -->
+    <string name="dialog_cam_title_user">輸入攝影機的認證</string>
+    <string name="dialog_cam_message_user">帳號與密碼</string>
+
+    <!-- Trigger View -->
+    <string name="trigger_delete_title">刪除觸發</string>
+    <string name="trigger_delete_message">確定要刪除</string>
+
+    <!-- Trigger Edit View -->
+    <string name="trigger_name">觸發名稱</string>
+
+    <string name="trigger_status_info_name">輸入觸發名稱</string>
+	<string name="trigger_status_info_sources">選擇觸發來源</string>
+	<string name="trigger_status_info_note">注意:</string>
+	<string name="trigger_status_info_note_content">觸發是基於情景控制的設定,\n如果尚未設定情境,\n請先設定情境模式</string>
+	<string name="trigger_status_info_scene">選擇觸發發生時執行的情境</string>
+	<string name="trigger_status_info_delay">如果希望在此場景執行完畢後的一段時間內，執行另一個情境</string>
+	<string name="trigger_status_info_notify">如果希望當觸發發生時手機收到通知</string>
+	<string name="trigger_status_info_mode">當感應器於何種模式下啟動觸發</string>
+
+    <string name="trigger_mode">模式</string>
+    <string name="trigger_scene">情境</string>
+    <string name="trigger_second">秒</string>
+    <string name="trigger_notify">通知</string>
+    <string name="trigger_second_hint">秒(可不填)</string>
+    <string name="trigger_scene_hint">情境(可不填)</string>
+
+    <!-- Schedule View -->
+    <string name="schedule_delete_title">刪除排程</string>
+    <string name="schedule_delete_message">確定要刪除</string>
+
+    <!-- Schedule Edit View -->
+    <string name="schedule_name">排程名稱</string>
+    <string name="schedule_period">執行週期</string>
+    <string name="schedule_period_week">每週</string>
+    <string name="schedule_period_day">每日</string>
+    <string name="schedule_period_once">一次</string>
+    <string name="schedule_day">星期</string>
+    <string name="schedule_delay">延遲時間</string>
+    <string name="schedule_time">時間</string>
+    <string name="schedule_scene">情境</string>
+    <string name="schedule_day_sum">星期日</string>
+    <string name="schedule_day_mon">星期一</string>
+    <string name="schedule_day_tue">星期二</string>
+    <string name="schedule_day_wed">星期三</string>
+    <string name="schedule_day_thu">星期四</string>
+    <string name="schedule_day_fri">星期五</string>
+    <string name="schedule_day_sat">星期六</string>
+
+	<!-- Gateway -->
+	<string name="gw_change_account">登出</string>
+	<string name="gw_account_setting">分享給他人</string>
+	<string name="gw_notify_setting">警報通知設定</string>
+	<string name="gw_firm">韌體更新</string>
+	<string name="gw_setting">Gateway設定</string>
+	<string name="gw_connected">连線方式</string>
+
+	<!-- Search Gateway -->
+	<string name="search_title">選擇要連線的 Gateway</string>
+	<string name="search_no_found">沒有找到Gateway</string>
+	<string name="manually_enter">手動輸入</string>
+	<string name="search_history">搜尋記錄</string>
+
+	<string name="gws_alert_title">新增Gateway</string>
+	<string name="gws_alert_message">請將手機連線至和Gateway相同的LAN，方可自動搜尋，或是手動輸入Gateway的MAC</string>
+
+
+	<!-- Control Gateway -->
+	<string name="CM_BUTTON_IN">加入裝置</string>
+	<string name="CM_BUTTON_EX">移除裝置</string>
+	<string name="CM_BUTTON_IN_OK">加入成功</string>
+	<string name="CM_BUTTON_EX_OK">移除成功</string>
+
+	<!-- User List -->
+	<string name="dialog_title_add_user">新增帳號</string>
+    <string name="dialog_message_add_user">輸入要新增的帳號與密碼</string>
+    <string name="dialog_title_edit_user">更改密碼</string>
+    <string name="dialog_message_edit_user">輸入新密碼</string>
+    <string name="dialog_title_del_user">刪除帳號</string>
+    <string name="dialog_message_del_user">確定要刪除</string>
+
+    <!-- ALERT -->
+    <string name="alert_button_ok">確定</string>
+    <string name="alert_button_cancel">取消</string>
+    <string name="alert_button_update">更新</string>
+    <string name="alert_button_save">儲存</string>
+    <string name="alert_button_repass">重寄密碼</string>
+
+    <string name="menu_exit_alert_title">關閉App?</string>
+    <string name="menu_exit_alert_message">確定要關閉App?</string>
+
+    <string name="dialog_message_load">讀取中</string>
+    <string name="dialog_message_wait">請稍後</string>
+    <string name="dialog_message_succeed">成功</string>
+    <string name="dialog_message_failed">錯誤</string>
+
+    <string name="dialog_title_change_user">更換登入的使用者</string>
+    <string name="dialog_message_change_user">輸入帳號與密碼</string>
+
+    <string name="dialog_title_firm_can">韌體更新</string>
+    <string name="dialog_message_firm_can">有新的韌體版本可供更新,\n確定要進行更新？\n\n</string>
+
+    <string name="dialog_title_firm_cant">韌體更新</string>
+    <string name="dialog_message_firm_cant">此韌體已是最新版本</string>
+
+    <string name="dialog_title_firm_done">警告</string>
+    <string name="dialog_message_firm_done">正在更新中 \n 請勿關閉 Gateway 電源</string>
+
+    <string name="dialog_title_set_auth">輸入Gateway</string>
+    <string name="dialog_message_set_auth">帳號與密碼</string>
+    <string name="dialog_message_set_mac">MAC Address</string>
+
+    <string name="dialog_account">帳號</string>
+    <string name="dialog_password">密碼</string>
+
+	<string name="alert_title_success">成功</string>
+	<string name="alert_title_error">錯誤</string>
+	<string name="alert_message_resend_done">密碼已重寄至Email</string>
+	<string name="alert_message_register_done">註冊完成</string>
+	<string name="alert_message_text_empty">欄位不可空白</string>
+
+	<string name="alert_message_error_401">帳號或密碼錯誤</string>
+
+
+
+
+    <!-- Status -->
+    <string name="status_online">連線中</string>
+    <string name="status_offline">斷線</string>
+    <string name="status_no_connect">Gateway連線失敗</string>
+
+    <!-- tab button -->
+    <string name="tab_button_setting">新增/移除裝置</string>
+    <string name="tab_button_search">搜尋</string>
+    <string name="tab_button_back">返回</string>
+    <string name="tab_button_add">新增</string>
+    <string name="tab_button_edit">修改</string>
+    <string name="tab_button_del">刪除</string>
+    <string name="tab_button_update">更新</string>
+    <string name="tab_button_next">下一步</string>
+    <string name="tab_button_previous">上一步</string>
+    <string name="tab_button_save">儲存</string>
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_Search">Search</string>
+
+    <string name="edit_view">Edit Device Info</string>
+    <string name="edit_scene">Edit Scene</string>
+    <string name="edit_scene_value">Select Device to add</string>
+    <string name="edit_mode">Edit Mode</string>
+
+    <string name="ctrl_panel">Control Panel</string>
+    <string name="roomlist">Room List</string>
+    <string name="userlist">User List</string>
+    <string name="notifylist">Notification List</string>
+    <string name="ctrl_mode_change">Controller Mode</string>
+    <string name="scene">Scene</string>
+
+    <string name="dialog_title_modified_user">Modified Password</string>
+    <string name="dialog_message_modified_user">Enter the New Password.</string>
+
+    <string name="dialog_title_add_notify">Add Notification</string>
+    <string name="dialog_message_add_notify">Enter the Device name and ID</string>
+
+
+    <string name="label_prefer_title_device_info">Device Information</string>
+    <string name="label_prefer_summary_device_info">Click here to view the details.</string>
+
+    <string name="hint_username">Account</string>
+    <string name="hint_userpwd">Password</string>
+
+    <string name="label_ok">OK</string>
+    <string name="label_devices">Devices</string>
+    <string name="label_control_state">Controller State</string>
+    <string name="label_cancel">Cancel</string>
+
+    <string name="scanqrcode">Scan QR Code</string>
+
+    <string name="label_add_node">Add Device</string>
+    <string name="label_remove_node">Remove Device</string>
+    <string name="label_cancel_node">Cancel Command</string>
+
+    <string name="label_add_trigger">Add Trigger</string>
+    <string name="label_add_schedule">Add Schedule</string>
+
+    <string name="label_tab1">Device</string>
+    <string name="label_tab2">Scene</string>
+    <string name="label_tab3">Gateway</string>
+    <string name="label_tab4">Trigger</string>
+    <string name="label_tab5">Schedule</string>
+
+    <string name="label_prefer_title_node_id">Node ID</string>
+    <string name="label_prefer_title_btype">Basic Type</string>
+    <string name="label_prefer_title_gtype">Generic Type</string>
+    <string name="label_prefer_title_name">Name</string>
+    <string name="label_prefer_title_location">Location</string>
+    <string name="label_prefer_title_manufacturer">Manufacturer</string>
+    <string name="label_prefer_title_product">Product</string>
+    <string name="label_prefer_title_listening">Listening</string>
+    <string name="label_prefer_title_frequent">Frequent</string>
+    <string name="label_prefer_title_beam">Beam</string>
+    <string name="label_prefer_title_routing">Routing</string>
+    <string name="label_prefer_title_security">Security</string>
+    <string name="label_prefer_title_time">Last Heard</string>
+    <string name="label_prefer_title_status">Status</string>
+
+    <string-array name = "type_array" >
+        <item>全部裝置</item>
+        <item>控制</item>
+        <item>感測</item>
+    </string-array>
+
+</resources>
