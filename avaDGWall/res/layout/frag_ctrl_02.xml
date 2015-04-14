@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:rowCount="2"
+    android:paddingTop="60dp"
+    android:paddingLeft="30dp"
+    android:background="@drawable/back_ground">
+    
+    <Button
+        android:drawablePadding="10sp"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:padding="45dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#429AF7"
+        android:background="@drawable/scene_btn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:id="@+id/swhBtn01" />
+    
+    <Button
+        android:drawablePadding="10sp"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:padding="45dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#429AF7"
+        android:background="@drawable/scene_btn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:id="@+id/swhBtn02" />
+    
+    <Button
+        android:drawablePadding="10sp"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:padding="45dp"
+        android:textColor="#429AF7"
+        android:background="@drawable/scene_btn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:id="@+id/swhBtn03" />
+    
+    <Button
+        android:drawablePadding="10sp"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:padding="45dp"
+        android:textColor="#429AF7"
+        android:background="@drawable/scene_btn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:id="@+id/swhBtn04" />
+    
+    <Button
+        android:drawablePadding="10sp"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:padding="45dp"
+        android:textColor="#429AF7"
+        android:background="@drawable/scene_btn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:id="@+id/swhBtn05" />
+    
+    <Button
+        android:drawablePadding="10sp"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:padding="45dp"
+        android:textColor="#429AF7"
+        android:background="@drawable/scene_btn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:id="@+id/swhBtn06" />
+    
+</GridLayout>

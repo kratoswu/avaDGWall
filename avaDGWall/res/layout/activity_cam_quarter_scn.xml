@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha=".40"
+        android:background="@drawable/back_btn"
+        android:onClick="exitActivity" />
+
+    <ImageView
+        android:background="#ff9813"
+        android:id="@+id/camImgView_02"
+        android:layout_width="384dp"
+        android:layout_height="288dp"
+        android:layout_alignLeft="@+id/camImgView_00"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/camImgView_01"
+        android:layout_width="384dp"
+        android:layout_height="288dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="#cf0132" />
+
+    <ImageView
+        android:id="@+id/camImgView_03"
+        android:layout_width="384dp"
+        android:layout_height="288dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/camImgView_00"
+        android:layout_width="384dp"
+        android:layout_height="288dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="52dp"
+        android:layout_toLeftOf="@+id/camImgView_01"
+        android:background="#137651" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground" >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <!--
+         <com.camera.simplemjpeg.MjpegView
+        android:layout_marginRight="20dp"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:id="@+id/doorVideo" />
+        -->
+
+        <ImageView
+            android:id="@+id/doorVideo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="6"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2" >
+
+            <!--
+             <Button
+            android:textSize="24sp"
+            android:textColor="#facc2e"
+            android:text="@string/btn_mute"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="90dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/mute_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/muteBtn" />
+            -->
+
+            <Button
+                android:background="@drawable/volume_up"
+                android:id="@+id/volume_up_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+
+            <Button
+                android:background="@drawable/volume_down"
+                android:id="@+id/volume_down_btn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:id="@+id/answerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/answer_btn"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="90dp"
+                android:paddingTop="10dp"
+                android:text="@string/btn_answer"
+                android:textColor="#facc2e"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/hangupBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/answerBtn"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/hangup"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="90dp"
+                android:paddingTop="10dp"
+                android:text="@string/btn_hangup"
+                android:textColor="#facc2e"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/snapBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/hangupBtn"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/snap_btn"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="90dp"
+                android:paddingTop="10dp"
+                android:text="@string/btn_snap"
+                android:textColor="#facc2e"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/openDoorBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/snapBtn"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/open_btn"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="90dp"
+                android:paddingTop="10dp"
+                android:text="@string/btn_open"
+                android:textColor="#facc2e"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

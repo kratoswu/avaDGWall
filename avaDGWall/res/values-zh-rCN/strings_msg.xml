@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_pref">目前尚未設定, 請先至設定進行 gateway 相關設定</string>
+    <string name="empty_dp_list">無任何門口機設定, 請先至設定進行門口機相關設定</string>
+    <string name="empty_label">名稱不得為空白, 請重新輸入</string>
+    <string name="empty_ip">IP 位址不得為空白, 請重新輸入</string>
+    <string name="empty_acc">帳號不得為空白, 請重新輸入</string>
+    <string name="empty_pwd">密碼不得為空白, 請重新輸入</string>
+    <string name="empty_sip">SIP ID 不得為空白, 請重新輸入</string>
+    <string name="incorrect_ip_format">IP 位址格式不正確! 請重新輸入.</string>
+    <string name="edit_err">儲存失敗</string>
+    <string name="empty_port">PORT 號不得為空白, 請重新輸入</string>
+    <string name="incorrect_port_format">PORT 號格式不正確, 請重新輸入</string>
+    <string name="rm_pnl_confirm">確定要移除此 Panel?</string>
+    <string name="connect_error">網路連線異常, 請檢查</string>
+    <string name="searching_device">正在搜尋裝置, 請稍候</string>
+    <string name="rm_dp_confirm">確定要移除此門口機設定?</string>
+    <string name="login_err">帳號或密碼錯誤, 請重新輸入</string>
+    <string name="location_err">無法取得所在位置, 請檢查 wifi 及 GPS 等設定</string>
+    <string name="weather_err">無法取得目前天氣資訊</string>
+    <string name="data_loading_err">資料格式錯誤! 載入失敗</string>
+</resources>

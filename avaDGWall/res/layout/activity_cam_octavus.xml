@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground" >
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/camImgView_00"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:background="#137651" />
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/camImgView_03"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/camImgView_02"
+        android:layout_toRightOf="@+id/camImgView_02"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/camImgView_02"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/camImgView_01"
+        android:layout_toRightOf="@+id/camImgView_01"
+        android:background="#ff9813" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha=".40"
+        android:background="@drawable/back_btn"
+        android:onClick="exitActivity" />
+
+    <ImageView
+        android:id="@+id/camImgView_01"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/camImgView_00"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/camImgView_00"
+        android:background="#cf0132" />
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/camImgView_07"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/camImgView_06"
+        android:layout_toRightOf="@+id/camImgView_06"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/camImgView_06"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/camImgView_05"
+        android:layout_toRightOf="@+id/camImgView_05"
+        android:background="#ff9813" />
+
+
+    <ImageView
+        android:id="@+id/camImgView_05"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/camImgView_04"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/camImgView_04"
+        android:background="#cf0132" />
+
+    <ImageView
+        android:id="@+id/camImgView_04"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/camImgView_00"
+        android:layout_marginTop="56dp"
+        android:layout_toLeftOf="@+id/camImgView_01"
+        android:background="#137651" />
+
+</RelativeLayout>

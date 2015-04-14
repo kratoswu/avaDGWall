@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="180dp"
+    android:paddingTop="40dp"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/janitorCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_janitor" />
+
+    <CheckBox
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/intercomCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_intercom" />
+
+    <CheckBox
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/cameraCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_camera" />
+
+    <CheckBox
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/contactCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_contacts" />
+
+    <CheckBox
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/ctrlCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_control" />
+
+</LinearLayout>

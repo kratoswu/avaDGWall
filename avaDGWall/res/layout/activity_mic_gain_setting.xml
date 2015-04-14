@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:id="@+id/micGainLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="164dp" />
+
+    <Button
+        android:onClick="micGainDown"
+        android:background="@drawable/left_btn"
+        android:id="@+id/micVolDownBtn"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_alignBaseline="@+id/micGainLbl"
+        android:layout_alignBottom="@+id/micGainLbl"
+        android:layout_marginRight="179dp"
+        android:layout_toLeftOf="@+id/micGainLbl" />
+
+    <Button
+        android:onClick="micGainUp"
+        android:background="@drawable/right_btn"
+        android:id="@+id/micVolUpBtn"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_alignBaseline="@+id/micGainLbl"
+        android:layout_alignBottom="@+id/micGainLbl"
+        android:layout_marginLeft="179dp"
+        android:layout_toRightOf="@+id/micGainLbl" />
+
+</RelativeLayout>

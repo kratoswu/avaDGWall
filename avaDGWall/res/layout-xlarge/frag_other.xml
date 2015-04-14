@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/date_bkg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="情境控制" />
+
+        <Button
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/sceneBtn0"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/scene_btn_0" />
+
+        <Button
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/sceneBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/scene_btn_0" />
+
+        <Button
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/sceneBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/scene_btn_0" />
+
+        <Button
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/sceneBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/scene_btn_0" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_marginLeft="20dp"
+        android:columnCount="4"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:rowCount="1">
+
+        <com.avadesign.comp.CustomSlider
+            android:id="@+id/mySlider0"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" >
+        </com.avadesign.comp.CustomSlider>
+
+        <com.avadesign.comp.CustomSlider
+            android:id="@+id/mySlider1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" >
+        </com.avadesign.comp.CustomSlider>
+
+        <com.avadesign.comp.CustomSlider
+            android:id="@+id/mySlider2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" >
+        </com.avadesign.comp.CustomSlider>
+
+        <com.avadesign.comp.CustomSlider
+            android:id="@+id/mySlider3"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" >
+        </com.avadesign.comp.CustomSlider>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:rowCount="3"
+        android:columnCount="2" >
+
+		<Button
+		    android:id="@+id/allOnBtn"
+		    android:text="ALL ON"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="15dp"
+		    android:textSize="20sp"
+		    android:textColor="#ffffff"
+		    android:layout_row="0"
+		    android:layout_column="0"
+		    android:layout_width="140dp"
+		    android:layout_height="80dp"
+		    android:background="@drawable/all_btn" />
+
+		<Button
+		    android:id="@+id/allOffBtn"
+		    android:text="ALL OFF"
+		    android:textSize="20sp"
+		    android:textColor="#ffffff"
+		    android:layout_row="0"
+		    android:layout_column="1"
+		    android:layout_width="140dp"
+		    android:layout_height="80dp"
+		    android:background="@drawable/all_btn" />
+
+		<LinearLayout
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_rowSpan="2"
+		    android:layout_columnSpan="2"
+		    android:layout_column="0"
+		    android:layout_row="1" >
+
+		    <TextView
+		        android:textSize="110sp"
+		        android:textColor="#ffffff"
+		        android:gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="300dp"
+		        android:background="@drawable/date_bkg"
+		        android:id="@+id/tempInfo" />
+
+		    <LinearLayout
+		        android:gravity="center_horizontal"
+		        android:orientation="vertical"
+		        android:layout_marginTop="20dp"
+		        android:background="@drawable/date_bkg"
+		        android:layout_height="260dp"
+		        android:layout_width="match_parent" >
+
+		        <TextView
+		            android:text="Fan"
+		            android:layout_marginTop="10dp"
+		            android:textColor="#ffffff"
+		            android:textSize="30sp"
+		            android:gravity="center"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:id="@+id/fanTitle" />
+
+		        <Button
+		            android:layout_marginTop="10dp"
+		            android:layout_width="180dp"
+		            android:layout_height="180dp"
+		            android:background="@drawable/switch_btn_0"
+		            android:id="@+id/fanBtn" />
+
+		    </LinearLayout>
+
+		</LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

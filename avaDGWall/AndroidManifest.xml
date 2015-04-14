@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.avadesign"
+    android:installLocation="auto"
+    android:versionCode="2211"
+    android:versionName="avaWpv0.01b" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- Permissions for Push Notification -->
+    <permission
+        android:name="com.avadesign.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Change package ! -->
+    <uses-permission android:name="org.linphone.permission.C2D_MESSAGE" />
+    <!-- Change package ! -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Needed to allow Linphone to install on tablets, since android.permission.CALL_PHONE implies android.hardware.telephony is required -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Needed to allow Linphone to install on tablets, since android.permission.CAMERA implies android.hardware.camera and android.hardware.camera.autofocus are required -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Needed to store received images if the user wants to -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Needed to use our own Contact editor -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- Needed to route the audio to the bluetooth headset if available -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- Needed to pre fill the wizard email field (only if enabled in custom settings) -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- Start custom -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+	<uses-permission android:name="android.permission.GET_TASKS" />
+
+	<uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+	<!-- End custom -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.avadesign.SharedClassApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_57"
+        android:label="VBell Wall"
+        android:largeHeap="true"
+        android:theme="@style/AvaTheme" >
+        <activity android:name="com.avadesign.MainScreenActivity"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tel" />
+                <data android:scheme="sip" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sip" />
+                <data android:scheme="imto" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.LinphoneLauncherActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitle"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tel" />
+                <data android:scheme="sip" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sip" />
+                <data android:scheme="imto" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="org.linphone.LinphoneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@style/NoTitle" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <service
+            android:name="org.linphone.LinphoneService"
+            android:label="@string/service_name"
+            android:stopWithTask="false" />
+
+        <receiver android:name="org.linphone.NetworkManager" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.linphone.BluetoothManager" >
+        </receiver>
+        <receiver android:name="org.linphone.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.linphone.PhoneStateChangedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.linphone.KeepAliveHandler" >
+        </receiver>
+
+        <!-- Needed for push notification -->
+        <receiver
+            android:name="org.linphone.gcm.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="org.linphone" />
+                <!-- Change package ! -->
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.linphone.gcm.GCMService" />
+
+        <!-- 主要的 activity, services -->
+        <activity android:name="com.avadesign.RTSPTestActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.CamOctavusScnActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.CamQuarterScnActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.MainScnBtnSettingActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.MICGainSettingActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.LayoutPrototypeActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.CtrlPnlTestActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.ActivateCodeActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.TriggerSettingActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.NVRScnSettingActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.CamListActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.CamVideoActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.SecurityCallSettingActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.EditCamActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.NVRActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.AvaCallActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.SceneSettingActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.ContactListActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.LocationWeatherActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.MaintainLoginActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.ZWaveDeviceSettingActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.DGPhoneActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.DGMainActivity" android:screenOrientation="sensorLandscape"></activity>
+        <activity android:name="com.avadesign.v4.PanelSettingMainActivity_New"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity android:name="com.avadesign.SystemSettingActivity"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity android:name="com.avadesign.SettingMainScreenActivity"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity android:name="com.avadesign.DPSettingActivity" android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity android:name="com.avadesign.AddNewPnlActivity" android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity android:name="com.avadesign.ControlMainActivity" android:screenOrientation="sensorLandscape">
+        </activity>
+
+        <service android:name="com.avadesign.service.PollingService" />
+        <service android:name="com.avadesign.service.WeatherService"></service>
+
+        <activity
+            android:name="com.avadesign.DoorActivity"
+            android:screenOrientation="sensorLandscape"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.camera.simplemjpeg.MjpegActivity"
+            android:label="@string/title_activity_mjpeg" >
+        </activity>
+        <activity
+            android:name="com.avadesign.PanelSettingMainActivity"
+            android:screenOrientation="sensorLandscape"
+            android:label="@string/title_activity_panel_setting_main" >
+        </activity>
+    </application>
+
+</manifest>

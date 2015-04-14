@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:orientation="vertical" >
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="8"
+        android:paddingLeft="180dp"
+        android:paddingRight="200dp"
+        android:paddingTop="10dp"
+        android:rowCount="2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="@string/lbl_sip"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/sipField"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:onClick="cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="1"
+            android:text="@string/button_cancel"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:onClick="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="right|center_vertical"
+            android:layout_row="1"
+            android:text="@string/button_save"
+            android:textColor="#ffffff" />
+    </GridLayout>
+
+</LinearLayout>

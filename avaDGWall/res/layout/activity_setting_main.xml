@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground" >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignTop="@+id/button8"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToNVRSetting"
+        android:text="@string/btn_nvr_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignLeft="@+id/button5"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToTestSetting"
+        android:text="面板測試"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignTop="@+id/button3"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToActivateCode"
+        android:text="@string/btn_activate_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:alpha="0"
+        android:onClick="fireSettingEvent"
+        android:id="@+id/button11"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToSystemSetting"
+        android:text="@string/btn_sys_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button9"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToSecuritySetting"
+        android:text="@string/btn_janitor_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/button4"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/button4"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToCtrlPnlSetting"
+        android:text="@string/btn_control_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/button9"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/button9"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToDPSetting"
+        android:text="@string/btn_dp_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToZWDSetting"
+        android:text="@string/btn_zwave_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignLeft="@+id/button7"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToTriggerSetting"
+        android:text="@string/btn_trigger_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/button6"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToSceneSetting"
+        android:text="@string/btn_scene_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/button5"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToMicGain"
+        android:text="@string/btn_mic_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/button5"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/button12"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="goToFuncDisplay"
+        android:text="@string/btn_main_scn_setting"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button12"
+        android:layout_alignTop="@+id/button3"
+        android:background="@drawable/main_icon"
+        android:gravity="center"
+        android:onClick="upgradeApp"
+        android:text="@string/btn_upgrade_app"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:orientation="horizontal" >
+    
+    <org.linphone.mediastream.video.display.GL2JNIView
+        android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:id="@+id/videoSurface" />
+    
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:onClick="switchVideo"
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_answer"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/answer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answerBtn" />
+        
+        <Button
+            android:onClick="hangUp"
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_hangup"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/hangup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hangupBtn" />
+        
+        <Button
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_mute"
+            android:layout_marginBottom="60dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/mute_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/muteBtn" />
+    </LinearLayout>
+
+</LinearLayout>
