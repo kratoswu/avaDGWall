@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <!-- <com.camera.simplemjpeg.MjpegView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:id="@+id/doorVideo" /> -->
+    
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:id="@+id/doorVideo" />
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_answer"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/answer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answerBtn" />
+        
+        <Button
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_hangup"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/hangup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hangupBtn" />
+        
+        <Button
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_mute"
+            android:layout_marginBottom="60dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/mute_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/muteBtn" />
+        
+        <Button
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_snap"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/snap_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/snapBtn" />
+
+        <Button
+            android:textColor="#facc2e"
+            android:textSize="30sp"
+            android:paddingLeft="90dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/btn_open"
+            android:background="@drawable/open_btn"
+            android:id="@+id/openDoorBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

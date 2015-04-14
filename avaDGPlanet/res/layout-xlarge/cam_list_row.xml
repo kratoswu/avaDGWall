@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:textSize="50sp"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="match_parent"
+        android:id="@+id/camLbl" />
+    
+    <Button
+        android:background="@drawable/edit_icon"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:id="@+id/editCamBtn" />
+    
+    <Button
+        android:background="@drawable/rm_icon"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/rmCamBtn" />
+
+</LinearLayout>

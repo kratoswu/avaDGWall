@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="btn_upgrade_app">软件更新</string>
+    <string name="btn_trigger_setting">触发器</string>
+    <string name="btn_control">控制</string>
+    <string name="action_add_cam">新增</string>
+    <string name="action_match_scn">画面对应</string>
+    <string name="btn_answer">通话</string>
+    <string name="btn_hangup">结束通话</string>
+    <string name="btn_mute">静音</string>
+    <string name="btn_snap">截图</string>
+    <string name="btn_open">开门</string>
+    <string name="btn_sys_setting">系统设置</string>
+    <string name="btn_control_setting">控制面板</string>
+    <string name="btn_dp_setting">对讲设置</string>
+    <string name="btn_zwave_setting">设备设置</string>
+    <string name="btn_scene_setting">情境设置</string>
+    <string name="btn_janitor_setting">保安</string>
+    <string name="btn_nvr_setting">摄像机</string>
+    <string name="btn_call">通话</string>
+    <string name="btn_janitor">保安</string>
+    <string name="btn_intercom">对讲</string>
+    <string name="btn_camera">摄像机</string>
+    <string name="btn_contacts">联系人</string>
+    <string name="btn_settings">设置</string>
+    <string name="contact_title">联系人</string>
+    <string name="maintain_title">維護員登彔</string>
+    <string name="add_dp">新增</string>
+    <string name="action_exit">離開</string>
+    <string name="action_save">儲存</string>
+    <string name="action_rename">重新命名</string>
+    <string name="action_add_panel">新增</string>
+    <string name="action_remove">移除</string>
+    <string name="action_settings">设置</string>
+    <string name="lbl_cam_name">名称</string>
+    <string name="lbl_ip_addr">IP 地址</string>
+    <string name="lbl_acc">帐户</string>
+    <string name="lbl_pwd">密码</string>
+    <string name="lbl_mac">MAC 地址</string>
+    <string name="cancelLbl">取消</string>
+
+</resources>

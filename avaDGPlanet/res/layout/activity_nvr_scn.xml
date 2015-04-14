@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground" >
+
+    <GridLayout
+        android:id="@+id/camGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_ground"
+        android:baselineAligned="false"
+        android:columnCount="3"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:rowCount="2" >
+
+        <ImageView
+            android:background="#000000"
+            android:id="@+id/camImgView_00"
+            android:layout_width="328dp"
+            android:layout_height="248dp"
+            android:layout_column="0"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_row="0" />
+
+        <ImageView
+            android:background="#000000"
+            android:id="@+id/camImgView_01"
+            android:layout_width="328dp"
+            android:layout_height="248dp"
+            android:layout_column="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_row="0" />
+
+        <ImageView
+            android:background="#000000"
+            android:id="@+id/camImgView_02"
+            android:layout_width="328dp"
+            android:layout_height="248dp"
+            android:layout_column="2"
+            android:layout_marginBottom="10dp"
+            android:layout_row="0" />
+
+        <ImageView
+            android:background="#000000"
+            android:id="@+id/camImgView_03"
+            android:layout_width="328dp"
+            android:layout_height="248dp"
+            android:layout_column="0"
+            android:layout_marginRight="10dp"
+            android:layout_row="1" />
+
+        <ImageView
+            android:background="#000000"
+            android:id="@+id/camImgView_04"
+            android:layout_width="328dp"
+            android:layout_height="248dp"
+            android:layout_column="1"
+            android:layout_marginRight="10dp"
+            android:layout_row="1" />
+
+        <ImageView
+            android:background="#000000"
+            android:id="@+id/camImgView_05"
+            android:layout_width="328dp"
+            android:layout_height="248dp"
+            android:layout_column="2"
+            android:layout_row="1" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha=".40"
+        android:background="@drawable/back_btn"
+        android:onClick="exitActivity" />
+
+</RelativeLayout>

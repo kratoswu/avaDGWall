@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4"
+        android:paddingBottom="65dp"
+        android:paddingLeft="200dp"
+        android:paddingRight="100dp"
+        android:paddingTop="10dp"
+        android:rowCount="5" >
+
+        <TextView
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="Door phone name"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:textSize="40sp"
+            android:id="@+id/labelField"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="IP address"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:textSize="40sp"
+            android:id="@+id/ipField"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+        
+        <Button
+            android:layout_column="3"
+            android:layout_row="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search"
+            android:id="@+id/searchBtn" />
+
+        <TextView
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="Account"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:textSize="40sp"
+            android:id="@+id/accField"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="Password"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:textSize="40sp"
+            android:id="@+id/pwdField"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:paddingRight="20dp"
+            android:text="SIP ID"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:textSize="40sp"
+            android:id="@+id/macField"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:textSize="40sp"
+            android:id="@+id/rmBtn"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            android:background="@drawable/btn_black_sml"
+            android:text="Remove"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_marginLeft="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:textSize="40sp"
+                android:id="@+id/cancelBtn"
+                android:layout_marginRight="10dp"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:background="@drawable/all_btn"
+                android:text="Cancel"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:textSize="40sp"
+                android:id="@+id/saveBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_width="190dp"
+                android:layout_height="120dp"
+                android:background="@drawable/all_btn"
+                android:text="Save"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

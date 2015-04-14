@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_dp"
+        android:icon="@drawable/refresh"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/add_dp" />
+
+    <item
+        android:icon="@drawable/back_icon"
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_exit"/>
+
+</menu>

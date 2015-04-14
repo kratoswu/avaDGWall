@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4"
+        android:paddingBottom="65dp"
+        android:paddingLeft="180dp"
+        android:paddingRight="200dp"
+        android:paddingTop="10dp"
+        android:rowCount="5" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="0"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="Camera name"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/labelField"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="IP address"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/ipField"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:ems="20"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:onClick="searchCam"
+            android:id="@+id/searchBtn"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@drawable/search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="Account"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/accField"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:text="Password"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/pwdField"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:paddingRight="20dp"
+            android:text="MAC Address"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/macField"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:onClick="doCancel"
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/all_btn"
+            android:text="Cancel"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:onClick="doSave"
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/all_btn"
+            android:text="Save"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

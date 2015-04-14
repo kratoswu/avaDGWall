@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_main" >
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:columnCount="6"
+        android:rowCount="1" >
+
+        <Button
+            android:id="@+id/securityBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="0"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:background="@drawable/security"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="callSecurity"
+            android:text="@string/btn_janitor"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/doorBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="1"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:background="@drawable/dp"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="goToDP"
+            android:text="@string/btn_intercom"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/nvrBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="2"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:background="@drawable/nvr"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="goToNVR"
+            android:text="@string/btn_camera"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/avaCallBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="3"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:background="@drawable/contacts"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="goToCall"
+            android:text="@string/btn_contacts"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/ctrlBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="4"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:background="@drawable/ctrl"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="goToCtrl"
+            android:text="@string/btn_control"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/settingBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="5"
+            android:layout_marginRight="20dp"
+            android:layout_row="0"
+            android:background="@drawable/settings"
+            android:gravity="bottom|center_horizontal"
+            android:onClick="goToSetting"
+            android:text="@string/btn_settings"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/dateInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeInfo"
+        android:layout_below="@+id/timeInfo"
+        android:text="yyyy/mm/dd"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/timeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="44dp"
+        android:text="00 : 00"
+        android:textColor="#ffffff"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/weekDayInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeInfo"
+        android:layout_toRightOf="@+id/timeInfo"
+        android:text="Friday"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tempInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timeInfo"
+        android:layout_alignRight="@+id/timeInfo"
+        android:text="36 C"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/weatherImgView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/timeInfo"
+        android:layout_alignLeft="@+id/timeInfo"
+        android:src="@drawable/weather00" />
+
+    <Button
+        android:id="@+id/secSwhBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="49dp"
+        android:background="@drawable/off_old"
+        android:gravity="bottom|center_horizontal"
+        android:onClick="switchSecurity"
+        android:textColor="#ffffff" />
+
+    <WebView
+        android:id="@+id/newsWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gridLayout1"
+        android:layout_below="@+id/secSwhBtn"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="140dp"
+        android:layout_toRightOf="@+id/weekDayInfo" />
+
+</RelativeLayout>

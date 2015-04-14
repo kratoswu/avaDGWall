@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/back_ground"
+    android:orientation="vertical" >
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="8"
+        android:paddingBottom="65dp"
+        android:paddingLeft="130dp"
+        android:paddingTop="100dp"
+        android:rowCount="2" >
+
+        <TextView
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="left"
+            android:textSize="40sp"
+            android:paddingBottom="25dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:text="@string/lbl_sip"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:textSize="40sp"
+            android:id="@+id/sipField"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:ems="10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:background="@drawable/btn_silver"
+            android:onClick="cancel"
+            android:textSize="30sp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="@string/button_cancel" />
+
+        <Button
+            android:background="@drawable/btn_silver"
+            android:onClick="save"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:text="@string/button_save" />
+    </GridLayout>
+
+</LinearLayout>

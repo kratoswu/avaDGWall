@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_pref">Please configure gateway setting at settings first.</string>
+    <string name="empty_dp_list">Please configure door phone setting at settings first.</string>
+    <string name="empty_label">Invalid name. Please check again.</string>
+    <string name="empty_ip">Invalid IP address. Please check again.</string>
+    <string name="empty_acc">Invalid account. Please check again.</string>
+    <string name="empty_pwd">Invalid password. Please check again.</string>
+    <string name="empty_sip">Invalid SIP ID. Please check again.</string>
+    <string name="incorrect_ip_format">Invalid IP address. Please check again.</string>
+    <string name="edit_err">Saving failed.</string>
+    <string name="empty_port">Invalid port number. Please check again.</string>
+    <string name="incorrect_port_format">Invalid port number. Please check again.</string>
+    <string name="rm_pnl_confirm">Really want to remove this panel?</string>
+    <string name="connect_error">Network connection error. Please check.</string>
+    <string name="searching_device">Searching devices now, it takes a few minutes&#8230;</string>
+    <string name="rm_dp_confirm">Really want to remove this door phone?</string>
+    <string name="login_err">Incorrect account or password. Please check again.</string>
+    <string name="location_err">Cannot get information of location, please check settings about network, GPS and location service.</string>
+    <string name="weather_err">Cannot get current information of weather.</string>
+    <string name="data_loading_err">Data form mismatch! Data loading failed.</string>
+    <string name="video_err">Cannot display video.</string>
+    <string name="invalid_camera">Cannot connect camera, please check network connection of this camera.</string>
+</resources>
