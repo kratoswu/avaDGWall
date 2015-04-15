@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="invalid_url">Input format is incorrect, please check again.</string>
     <string name="empty_pref">Please configure gateway setting at settings first.</string>
     <string name="empty_dp_list">Please configure door phone setting at settings first.</string>
     <string name="empty_label">Invalid name. Please check again.</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="invalid_url">輸入格式不正確, 請檢查</string>
     <string name="empty_pref">目前尚未設定, 請先至設定進行 gateway 相關設定</string>
     <string name="empty_dp_list">無任何門口機設定, 請先至設定進行門口機相關設定</string>
     <string name="empty_label">名稱不得為空白, 請重新輸入</string>

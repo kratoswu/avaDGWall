@@ -31,6 +31,7 @@
     <string name="btn_open">Open</string>
     <string name="key_security_sip">security_sip</string>
     <string name="lbl_sip">SIP ID</string>
+    <string name="key_rtsp_url">rtsp_url</string>
     <string name="key_cam_00">cam_00</string>
     <string name="key_cam_01">cam_01</string>
     <string name="key_cam_02">cam_02</string>
