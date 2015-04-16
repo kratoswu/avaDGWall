@@ -55,10 +55,14 @@ import at.theengine.android.simple_rss2_android.RSSItem;
 import at.theengine.android.simple_rss2_android.SimpleRss2Parser;
 import at.theengine.android.simple_rss2_android.SimpleRss2ParserCallback;
 
+import com.avadesign.model.ZWaveNode;
+import com.avadesign.model.ZWaveNodeValue;
+import com.avadesign.service.PollingService;
 import com.avadesign.service.WeatherService;
 import com.avadesign.task.GetCamDataTask;
 import com.avadesign.util.AvaPref;
 import com.avadesign.util.StringUtil;
+import com.avadesign.v4.frag.AbstractPanelFrag;
 
 /**
  * @author Phoenix
@@ -99,6 +103,90 @@ public class MainScreenActivity extends FragmentActivity implements LinphoneOnCa
 
     private WebView newsWebView;
 
+    private ZWaveNode alarmNode;
+
+    private BroadcastReceiver warningReceiver = new BroadcastReceiver() {
+
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals(PollingService.HTTP_401)) {
+                call401();
+            } else if (intent.getAction().equals(PollingService.HTTP_404)) {
+                call404();
+            } else if (intent.getAction().equals(PollingService.REFRESH_NODE_DATA)) {
+                checkAlarm();
+            }
+        }
+
+    };
+
+    private void call401() {
+        runOnUiThread(new Runnable() {
+
+            public void run() {
+                // TODO Auto-generated method stub
+
+            }
+        });
+    }
+
+    private void call404() {
+        runOnUiThread(new Runnable() {
+
+            public void run() {
+                // TODO Auto-generated method stub
+
+            }
+        });
+    }
+
+    private void checkAlarm() {
+        ArrayList<HashMap<String, Object>> nodeMapList = new ArrayList<HashMap<String, Object>>();
+        getAvaApp().refreshNodesList(nodeMapList);
+        for (HashMap<String, Object> nodeMap : nodeMapList) {
+            ZWaveNode node = new ZWaveNode(nodeMap);
+
+            for (ZWaveNodeValue val : node.value) {
+                if (hasAlarm(val)) {
+                    alarmNode = node;
+                    goToWarningActivity();
+                    return;
+                }
+            }
+        }
+    }
+
+    private SharedClassApp getAvaApp() {
+        return (SharedClassApp) getApplication();
+    }
+
+    private void goToWarningActivity() {
+        StringBuffer msgBuff = new StringBuffer(alarmNode.name);
+        msgBuff.append(getString(R.string.is_warning));
+
+        Intent intent = new Intent(this, WarningActivity.class);
+        intent.putExtra("errMsg", msgBuff.toString());
+
+        startActivity(intent);
+    }
+
+    private boolean hasAlarm(ZWaveNodeValue zVal) {
+        if (zVal.class_c.equalsIgnoreCase("ALARM") && zVal.label.equalsIgnoreCase("Alarm Level")) {
+            return !zVal.current.equals("0");
+        } else {
+            return false;
+        }
+    }
+
+    private void stopPollingService() {
+        Intent intent = new Intent(this, PollingService.class);
+        stopService(intent);
+    }
+
+    private void startPollingService() {
+        Intent intent = new Intent(this, PollingService.class);
+        startService(intent);
+    }
+
     private class ContentViewClient extends WebViewClient {
 
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -134,14 +222,30 @@ public class MainScreenActivity extends FragmentActivity implements LinphoneOnCa
         String lbl = isOnSecurity ? "AWAY" : "AT HOME";
         secSwhBtn.setBackgroundResource(imgId);
         secSwhBtn.setText(lbl);
+
+        /*
+         * TODO 根據 button 的狀態來決定啟動或關閉 polling
+         * */
+        if (isOnSecurity) {
+            IntentFilter iFilter = new IntentFilter();
+            iFilter.addAction(PollingService.HTTP_401);
+            iFilter.addAction(PollingService.HTTP_404);
+            iFilter.addAction(PollingService.REFRESH_NODE_DATA);
+
+            registerReceiver(warningReceiver, iFilter);
+            startPollingService();
+        } else {
+            unregisterReceiver(warningReceiver);
+            stopPollingService();
+        }
     }
 
     private String getWeatherCode() {
-        return ((SharedClassApp) getApplication()).getWeatherCode();
+        return getAvaApp().getWeatherCode();
     }
 
     private String getTemperature() {
-        return ((SharedClassApp) getApplication()).getTemperature();
+        return getAvaApp().getTemperature();
     }
 
     protected void onStart() {
@@ -166,7 +270,7 @@ public class MainScreenActivity extends FragmentActivity implements LinphoneOnCa
         }
     }
 
-    private BroadcastReceiver receiver = new BroadcastReceiver() {
+    private BroadcastReceiver weatherReceiver = new BroadcastReceiver() {
 
         public void onReceive(Context context, Intent intent) {
             try {
@@ -342,7 +446,7 @@ public class MainScreenActivity extends FragmentActivity implements LinphoneOnCa
 
         initWeatherImgResMap();
 
-        appPref = ((SharedClassApp) getApplication()).getAppPref();
+        appPref = getAvaApp().getAppPref();
 
         // initialize UI
         initWeatherImgView();
@@ -380,7 +484,7 @@ public class MainScreenActivity extends FragmentActivity implements LinphoneOnCa
         itFilter.addAction(WeatherService.REFRESH_WEATHER);
         itFilter.addAction(WeatherService.LOCATION_ERROR);
         itFilter.addAction(WeatherService.WEATHER_ERROR);
-        registerReceiver(receiver, itFilter);
+        registerReceiver(weatherReceiver, itFilter);
 
         /*
          * Start weather service
@@ -426,8 +530,9 @@ public class MainScreenActivity extends FragmentActivity implements LinphoneOnCa
 
     protected void onDestroy() {
         Log.e("", "Main destroy...");
-        unregisterReceiver(receiver);
+        unregisterReceiver(weatherReceiver);
         stopService(new Intent(this, WeatherService.class));
+        stopPollingService();
 
         if (dateTimer != null) {
             dateTimer.cancel();

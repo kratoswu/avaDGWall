@@ -44,4 +44,12 @@
         <item name="android:textSize">25sp</item>
     </style>
 
+    <style name="Theme.PopView" parent="@android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
 </resources>

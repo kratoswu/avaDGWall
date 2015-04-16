@@ -227,10 +227,10 @@ public class SettingMainScreenActivity extends Activity {
     }
 
     public void goToTestSetting(View v) {
-//        startActivity(new Intent(this, ActivateCodeActivity.class));
-      Intent intent = new Intent();
-      intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.Settings"));
-      startActivity(intent);
+        startActivity(new Intent(this, WarningActivity.class));
+//      Intent intent = new Intent();
+//      intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.Settings"));
+//      startActivity(intent);
     }
 
     public void goToSecuritySetting(View v) {

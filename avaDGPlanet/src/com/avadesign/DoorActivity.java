@@ -67,26 +67,26 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
     private int currentItemIdx;
 
     private AvaPref appPref;
-    
+
     private SparseArray<Fragment> frags = new SparseArray<Fragment>();
-    
+
     private int idleTime;
-    
+
     private Handler finishHandler = new Handler();
 
     private Timer idleTimer;
-    
+
     private MediaPlayer mPlayer;
-    
+
     private TimerTask idleTask = new TimerTask() {
-        
+
         public void run() {
             if (!isInCall()) {
                 if (getIdleTime() > 0) {
                     setIdleTime(getIdleTime() - 1);
                 } else {
                     finishHandler.post(new Runnable() {
-                        
+
                         public void run() {
                             finish();
                         }
@@ -95,19 +95,19 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
             }
         }
     };
-    
+
     private LinphoneCall.State currentState;
 
     private boolean isInCall() {
         LinphoneCore lc = LinphoneManager.getLcIfManagerNotDestroyedOrNull();
-        
+
         if (lc != null) {
             return lc.isIncall();
         } else {
             return false;
         }
     }
-    
+
     public LinphoneCall getCall() {
         return call;
     }
@@ -133,7 +133,7 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
 
                 // Send message
                 chatRoom.sendMessage(CMD_DOOR_UNLOCK);
-                
+
                 if (getIdleTime() > 0) {
                     setIdleTime(10);
                 }
@@ -164,11 +164,11 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
 
     protected void onDestroy() {
         currentState = null;
-        
+
         if (idleTimer != null) {
             idleTimer.cancel();
         }
-        
+
         LinphoneManager.removeListener(this);
         LinphoneManager.getLc().terminateAllCalls();
 
@@ -187,7 +187,7 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
 
             Log.e("accept", "");
             LinphoneManager.getInstance().acceptCallWithParams(call, params);
-            
+
             Log.e("answer end", "");
         }
     }
@@ -267,7 +267,7 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_door);
-        
+
         // TODO
 //        LinphonePreferences mPrefs = LinphonePreferences.instance();
 //        mPrefs.enableVideo(false);
@@ -348,7 +348,7 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
             public void onPageSelected(int position) {
 //                Toast.makeText(DoorActivity.this, "Page changed", Toast.LENGTH_SHORT).show();
                 getActionBar().setSelectedNavigationItem(position);
-                
+
                 if (currentState == LinphoneCall.State.StreamsRunning) {
                     /*
                      * 切換頁時的掛斷改在這裡處理, 以免在對講畫面時收到 call 後就自己掛斷.
@@ -356,7 +356,7 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
                     LinphoneManager.getLcIfManagerNotDestroyedOrNull().terminateAllCalls();
                     setIdleTime(180);
                 }
-                
+
                 currentItemIdx = position;
                 pager.setCurrentItem(position);
                 refreshFragImg();
@@ -425,7 +425,7 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
     public void onCallStateChanged(LinphoneCall call, final State state, String message) {
         Log.e("State", state.toString());
         currentState = state;
-        
+
         if (state == LinphoneCall.State.CallEnd) {
             setIdleTime(0);
             stopRing();
@@ -436,16 +436,16 @@ public class DoorActivity extends FragmentActivity implements ActionBar.TabListe
 
     private void startRing() {
         Log.e("Start Ring", "");
-        mPlayer = MediaPlayer.create(DoorActivity.this, R.raw.planet);
+        mPlayer = MediaPlayer.create(this, R.raw.planet);
         mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        
+
         mPlayer.setOnCompletionListener(new OnCompletionListener() {
-            
+
             public void onCompletion(MediaPlayer mp) {
                 mPlayer.start();
             }
         });
-        
+
         mPlayer.setLooping(false);
         mPlayer.start();
     }

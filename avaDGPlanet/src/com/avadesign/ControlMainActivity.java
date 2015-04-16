@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 
 import android.annotation.SuppressLint;
@@ -35,7 +34,6 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.avadesign.model.bean.PanelDetailBean;
 import com.avadesign.model.bean.PanelItemBean;
@@ -45,9 +43,7 @@ import com.avadesign.util.HttpCommunicator;
 import com.avadesign.util.PanelDetailHelper;
 import com.avadesign.util.PanelListHelper;
 import com.avadesign.v4.PanelFragFactory;
-import com.avadesign.v4.frag.AbstractFrag;
 import com.avadesign.v4.frag.AbstractPanelFrag;
-import com.avadesign.v4.frag.EmptyScreenFrag;
 
 @SuppressLint("NewApi")
 public class ControlMainActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -66,7 +62,7 @@ public class ControlMainActivity extends FragmentActivity implements ActionBar.T
         getMenuInflater().inflate(R.menu.door, menu);
         return true;
     }
-    
+
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -159,7 +155,7 @@ public class ControlMainActivity extends FragmentActivity implements ActionBar.T
                 getAppPrefVal(R.string.key_gateway_port)) + getString(R.string.panel_list);
         String acc = getAppPrefVal(R.string.key_acc);
         String pwd = getAppPrefVal(R.string.key_pwd);
-        
+
         Log.e("url", urlStr);
 
         Map<String, String> paramMap = new HashMap<String, String>();
@@ -201,6 +197,7 @@ public class ControlMainActivity extends FragmentActivity implements ActionBar.T
     protected void onDestroy() {
         unregisterReceiver(receiver);
         getAvaApp().setPnlDetails(new ArrayList<PanelDetailBean>());
+
         stopPollingService();
         super.onDestroy();
     }

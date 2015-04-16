@@ -31,11 +31,11 @@ public class SharedClassApp extends Application {
     private List<PanelDetailBean> pnlDetails = new ArrayList<PanelDetailBean>();
     private String weatherCode;
     private String temperature;
-    
+
     public Map<String, JSONObject> getDpMap() {
         Map<String, JSONObject> result = new HashMap<String, JSONObject>();
         Set<String> dpVals = appPref.getValueSet(getString(R.string.key_dplist));
-        
+
         if (dpVals != null && dpVals.size() > 0) {
             try {
                 for (String s : dpVals) {
@@ -46,7 +46,7 @@ public class SharedClassApp extends Application {
                result.clear();
             }
         }
-        
+
         return result;
     }
 

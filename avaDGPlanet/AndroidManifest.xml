@@ -51,26 +51,26 @@
     <!-- Needed to pre fill the wizard email field (only if enabled in custom settings) -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
-    
+
     <!-- Start custom -->
-    <uses-permission android:name="android.permission.INTERNET" /> 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
-   
+
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    
+
 	<uses-permission android:name="android.permission.GET_TASKS" />
-	
+
 	<uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
@@ -211,6 +211,7 @@
         <service android:name="org.linphone.gcm.GCMService" />
 
         <!-- 主要的 activity, services -->
+        <activity android:name="com.avadesign.WarningActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.PopView" android:launchMode="singleTop"></activity>
         <activity android:name="com.avadesign.MainScnBtnSettingActivity" android:screenOrientation="sensorLandscape"></activity>
         <activity android:name="com.avadesign.ActivateCodeActivity" android:screenOrientation="sensorLandscape"></activity>
         <activity android:name="com.avadesign.TriggerSettingActivity" android:screenOrientation="sensorLandscape"></activity>
@@ -228,13 +229,13 @@
         <activity android:name="com.avadesign.ZWaveDeviceSettingActivity" android:screenOrientation="sensorLandscape"></activity>
         <activity android:name="com.avadesign.DGPhoneActivity" android:screenOrientation="sensorLandscape"></activity>
         <activity android:name="com.avadesign.DGMainActivity" android:screenOrientation="sensorLandscape"></activity>
-        <activity android:name="com.avadesign.v4.PanelSettingMainActivity_New" 
+        <activity android:name="com.avadesign.v4.PanelSettingMainActivity_New"
             android:screenOrientation="sensorLandscape">
         </activity>
-        <activity android:name="com.avadesign.SystemSettingActivity" 
+        <activity android:name="com.avadesign.SystemSettingActivity"
             android:screenOrientation="sensorLandscape">
         </activity>
-        <activity android:name="com.avadesign.SettingMainScreenActivity" 
+        <activity android:name="com.avadesign.SettingMainScreenActivity"
             android:screenOrientation="sensorLandscape">
         </activity>
         <activity android:name="com.avadesign.DPSettingActivity" android:screenOrientation="sensorLandscape">
